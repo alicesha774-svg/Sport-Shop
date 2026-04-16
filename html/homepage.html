@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KINETIC ARCHIVE | Performance Football Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#e71520",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#ebe7e7",
+                    "surface-tint": "#c00014",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "on-tertiary-container": "#fcfcfd",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "background": "#fcf9f8",
+                    "primary-fixed": "#ffdad6",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-variant": "#e5e2e1",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-secondary-fixed-variant": "#474646",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#e8bcb7",
+                    "on-background": "#1c1b1b",
+                    "surface-container-low": "#f6f3f2",
+                    "surface": "#fcf9f8",
+                    "on-primary-container": "#fffbff",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "tertiary": "#5a5c5d",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "on-secondary-container": "#656464",
+                    "surface-container": "#f0edec",
+                    "inverse-primary": "#ffb4ab",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fcf9f8",
+                    "tertiary-container": "#737576",
+                    "on-primary-fixed": "#410002",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-surface": "#1c1b1b",
+                    "secondary-container": "#e5e2e1",
+                    "outline": "#936e6a",
+                    "primary": "#bb0013",
+                    "on-surface-variant": "#5e3f3c",
+                    "inverse-on-surface": "#f3f0ef",
+                    "tertiary-fixed": "#e2e2e3",
+                    "surface-container-highest": "#e5e2e1",
+                    "inverse-surface": "#313030",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed-variant": "#93000d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-scroll::-webkit-scrollbar { display: none; }
+        .kinetic-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-white">
+<!-- TOP NAVIGATION BAR -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 backdrop-blur-xl flex justify-between items-center w-full px-8 h-20">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="#">KINETIC ARCHIVE</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">BOOTS</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">GLOVES</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">APPAREL</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">EQUIPMENT</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1" href="#">LATEST</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">SALE</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-black hover:text-[#ED1C24] transition-all">person</button>
+<div class="relative group cursor-pointer">
+<span class="material-symbols-outlined text-black group-hover:text-[#ED1C24] transition-all">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-[10px] text-white w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- HERO SECTION: THE UNITED PACK -->
+<section class="relative h-[921px] w-full overflow-hidden flex items-center px-12 lg:px-24">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover grayscale contrast-125" data-alt="close-up action shot of modern crimson and gold football boots striking a ball on a foggy stadium pitch at night with intense stadium lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAncQFZKaOGUZ-uNp5b2s9U1OdqpaATFT33vK8AGbDrXi_tynUDYh5JgJUrLWDubPuo3ZHNUymxWLQYcQd_ViNvmWWX1Cnhee9R2icjpXGHKQwJOsNQYjuMYqprZ4nOxzcILJvCG3yvJcD4tpSwSvZsi0Vnd2RjUZzc3FtWW7KjEeBzzWjMfAWwDdBoxFfQuQlSUACY33KvsKSUS1TWig6a2eQVWePwLz27KS08CTRFJK_F5mSMxOnQiSUOrAFHWqKmg6IhHaNCTQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<span class="font-label text-primary-container font-bold tracking-widest uppercase mb-4 block">LIMITED EDITION RELEASE</span>
+<h1 class="text-7xl lg:text-9xl font-headline font-black text-white leading-[0.85] tracking-tighter uppercase mb-8">
+                    UNITED<br/>PACK
+                </h1>
+<p class="text-white/80 text-xl font-body max-w-xl mb-10 leading-relaxed">
+                    Engineered for the absolute elite. Experience the fusion of kinetic energy and structural precision in our most aggressive silhouette yet.
+                </p>
+<div class="flex gap-4">
+<button class="px-10 py-5 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-black uppercase text-lg rounded-sm hover:scale-105 transition-transform">
+                        SHOP COLLECTION
+                    </button>
+<button class="px-10 py-5 bg-surface-container-highest/20 backdrop-blur-md text-white font-headline font-black uppercase text-lg rounded-sm hover:bg-white hover:text-black transition-all">
+                        WATCH FILM
+                    </button>
+</div>
+</div>
+</section>
+<!-- BRAND SCROLLER (STATIC GRID) -->
+<section class="py-12 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-12 flex flex-wrap justify-between items-center opacity-60 hover:opacity-100 transition-opacity gap-8">
+<img alt="Nike" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white nike swoosh logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtTJoYtijW21LzGjTpl8gQdWd8wJLyN1xAevBnpbhozarpCfrvxIPfc4CBz6_eLIMaMjJwZlI4BXBzC_4P9EhaqjK7ECPv_OEgAWktM_U2-wXFT-m4epvd2Uyv0hnjrafAA77dRdYJ1q1JxofNN4jkMhYb_DxPHMN7r7eej1zLTBHDLj8fcDv44PaVyhkP3SlMjjfud594XRhVqpldsGk0NNFN7qr2OFmQtitF2olnzAWHOTKEajjrFR_RsLBlf3huVPsKK0LsuQ"/>
+<img alt="Adidas" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white adidas three stripes logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxObpY4CrNahuQ0aPRPE7S2EznUdTrDsYFbqp_bNsKBrVKuoanwNL9fEFZ4eIa6O4sEMzCQJ5r_XmG3cYRpudNlMQg5UqzPhgLaPmg2W-f44Dh6aCoMJakNvStiGES5HgavqIRtAiotFHfF9yqZurBVAAlWLvgkTXgbrq6qfe5nNTlOfzC363IJ8SDr0iWBpmgI0RtRiIlNIWH9Zaotd-dwWbR1hQJnNRf7yhd7nPrYRhNdkExroiF9j8KDQfMjGvS5vwZjPz0cw"/>
+<img alt="Puma" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white jumping puma logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmspVCwdi7k8ACIr45e-3-L5P-knNriT3KIh1DHefsXynBQDHo03cJ3NEmyrUC--Mzh1qNIEfmqYJU4MLufbyDf96W7iuOd89TPkU6JVD6Wx0-r57gSMjRNy5tiWTFRR-uf54yl6gws67vZBSFACuoSQNXhGxCHNdWY4sYBIBCiiKpI2O_I03gYn7PY12auirIw0S5u7K7VAYw4e0_04BSw5qkCBp8cpnJh7ZNUEvQaENIO5f-ydZixewqWxR5Xl9V5HsAZnNjIw"/>
+<img alt="Mizuno" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white mizuno logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSqj2VfXTdN1-d_I8Cmv4Ln3EtUXMwZA4GHOBzxEOb-FHpq2W6i6-2yP-H0-v_M1Js1FhZBeEO7nqh5UbPZL1l6y6-QbCQ-fnPC1ISdqaQiq5QPMoD-Hh8Iv8E24Ufz_nlt_hOrNLOFaxQQFdO6IBcpyNZ1SPlGhOfSasH5xAb7fIVwkm3YxJ6luJmQgA0SzTsRwoRkpO16qhzU78q1UbTyUr50gjjfq6nBDzjdof2NeQd-Ff5Ip1-_JwEuQOrM5hxgsLCrGAKLA"/>
+<img alt="New Balance" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white new balance nb logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcm8pHl9dl5S5GwAsVZZkiPjlsLlS_KZdNcSCeMDRWwRwaAuK9jivMRsYYunZYgv8CUvHqyWch2T0Mjdp8-LkkQiIjt3EWtsOuEBaBNMrd3ej8vJBCL2zz1fNZ_wiglQi3TVkwf0B76Sm5qvAyGd79bivqyy6zLOXRlf-3OuRvS471nwuqau3-UPxxSWkvnmZrkDLuCmYw-p08lZU3lF5WLfaZsZVBBx7yHG_PV7Lk3HdsDnQV4NuBZFYToOluL_8vroaD6Qr-AQ"/>
+</div>
+</section>
+<!-- NEW ARRIVALS GRID -->
+<section class="py-24 bg-surface px-8 lg:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-5xl lg:text-7xl font-headline font-black tracking-tighter uppercase leading-none">NEW ARRIVALS</h2>
+<div class="h-1 w-24 bg-primary mt-4"></div>
+</div>
+<button class="group flex items-center gap-2 font-headline font-bold text-lg hover:text-primary transition-colors">
+                        VIEW ALL <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col group relative">
+<div class="relative h-64 mb-8 overflow-hidden">
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="side view of a premium red and chrome football boot with intricate grip textures on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsWZ2uxwZbiU9OLxNhpPJfJ239hikTCljbZ-kmwOZgpjF9Xm-ccumqmI2InvlZF_2I3Q7jkk53RAvQJdb_8iA5NXq8ZqfY6Y7HzGnZyEwHtfyXBs3Areo_84XZE5gZp630Svk8k99fQIaLTcewQAcTinVpXQVZp0Qg3V80yWk1WLMFtT44VbMEni7DcfJtyfQgBLtOBOFFxkUYoMwNDCZczy-ycCySJjOVmW-PZXZtylUZLGRxhX-Zf1WmR5Kp4ylj1AuN4wJ6ng"/>
+<span class="absolute top-0 right-0 font-label text-[10px] tracking-widest bg-black text-white px-2 py-1">PRE-ORDER</span>
+</div>
+<div class="mt-auto">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">KINETIC SERIES</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">PULSE ELITE FG</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$275.00</p>
+<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col group relative">
+<div class="relative h-64 mb-8 overflow-hidden">
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="oblique view of a sleek black football boot with neon yellow accents and carbon fiber soleplate on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1qxqVfPeyXoM0GfGwJ5ScQr-aX6-cehY5EpCFiGCGqRUAdlP9Gn2QWrrIIkMuILTirX6NMY-rt3NF9IbtQzQ0LWvNEeIQvBT4iQKJLq7esAXOMzUfKwf-hnzMuc4rL6IPJiVQt8H2K1XGALf083m2ml6qRzyQogfDq6WMrY00dn12fhTv6b6B51k8CvQ8v7Nm6BqBXdM07PhvW4uujiZX55WfERqu6MVm0rzqXnDii08Kh3WuRzqaS3yUyWNhL2p-lO2pg5m2cQ"/>
+</div>
+<div class="mt-auto">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">SPEED ARCHIVE</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">VORTEX 1.0</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$240.00</p>
+<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col group relative">
+<div class="relative h-64 mb-8 overflow-hidden">
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="top-down view of an electric blue football boot featuring off-center lacing system and textured strike zone on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCakbp1DtIkBsWZNPXPNvJjhXPYqKTllxFWOWViFOg_jZrxpqHs4kLzP9b8b3qR15K4NV4Nr6b5AVtjiryV92QUqXs8S_bFW4qOAhDhC1n_TTWzjTzD1QeX_aXIcZieGEWW9Tq7J5Oqc9wlHvzVeE3Y0rFgK3Mn7sNqUiJmVr6nntPjMn_k_c_Haj-G__54Ro8JwZJK9b0BJ__-UHiKAP5oNPLrkfYbRtwCuVk0Tp-QrFq8M3lNykCio3OcmSqh3CcY_cZ9xZqD7A"/>
+</div>
+<div class="mt-auto">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">CONTROL CORE</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">MAESTRO SG</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$220.00</p>
+<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col group relative">
+<div class="relative h-64 mb-8 overflow-hidden">
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="professional photo of a crisp white football boot with silver iridescent details and clear studs on a white studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB00PWhjHMWRmzbxcvjImBdKY7ovqfzMezPjMJnMF7DPqtuursMlNwtXC3H2vykFp2vW-CsuLxzkDH-YvVr6zNQrs3-T8j4UzxAZdp67NYRI7TeyLmO7E3zKrPr3seY-REyTkVrEIRPQ_FudjKUTq5ymL8OJaOVbOimP2jyJgYvPgPRL8-zjBuJIKkMSGrhp2RCpFjOHe8aqK8hLNJ9wTUodmVzKB4N_sMH8Bvfl5OcAO75mQIX9PN2D2RemjELhk4qp5qnnU4CYQ"/>
+</div>
+<div class="mt-auto">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">HERITAGE LAB</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">CLASSICO PRO</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$180.00</p>
+<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ELITE EQUIPMENT PROMO -->
+<section class="relative h-[614px] flex items-center overflow-hidden">
+<div class="absolute inset-0 bg-surface-container-high">
+<img alt="Elite Equipment" class="w-full h-full object-cover mix-blend-multiply opacity-50" data-alt="close-up of professional football training equipment including agility cones, hurdles, and a high-tech match ball on green turf with high contrast shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYpKYUMVVpwC-z8VKkY4l7cDWteoLN3PtRgfDg8FNMPQLqKX8nYV2Fua8o0aOHFCE6A9535xQ86d2asVlfA4sZlHTCpOa2QlxlXtprqf3d9S0zEfK93jSK5ZHAH1Q-DEuAffmI22TCmM0TcutAtNCj_sK3G-hEGbMHWo5_W0ZRqfkAtbSPPNc2BvVOCmM-wyor1hTBz_Cv107Dwo8sUaE_Uk6dBK3FTWii9MnhNxghvFyTwE6UEeTNOLynwsjHThZpzoDRR_XXcg"/>
+</div>
+<div class="max-w-7xl mx-auto w-full px-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-xl">
+<h2 class="text-6xl font-headline font-black text-black tracking-tighter uppercase leading-none mb-6">ELITE LEVEL<br/>EQUIPMENT</h2>
+<p class="text-on-surface-variant font-body text-lg mb-8">Professional grade training gear, recovery tools, and ball technology designed to shave seconds off your sprint and add power to your strike.</p>
+<button class="px-12 py-5 bg-black text-white font-headline font-black uppercase text-sm tracking-widest hover:bg-primary transition-all">
+                        EXPLORE GEAR
+                    </button>
+</div>
+<div class="hidden lg:block w-96 h-96 relative">
+<div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl"></div>
+<img alt="Match Ball" class="w-full h-full object-contain relative z-10" data-alt="ultra-modern geometric match football with black and neon red panels floating in mid-air with realistic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF7GFjUGOAuHtU34KYLLyibcNZt9RW8pWPVlTuWpUFpB_6eLYVRfON40pUtewrvKsI_5PDgq5lZPbisrluPD4vEtzZg3asWCtUQA7yqoM5V8UrUZf1ulPg5CS3qqZS4WJvw9KertRaPcJjZ7IWSzF6A7dZQzDf0tFLnSbBV5HDkdMUvWA0AcqceLXmrQ0gvcikzx-ynRw-iGvVUp0uUCpzg8ypCSThtHC06r9CNItIlB-x17YnCGU0XQiiskg3hIZd8RjCRWfmFg"/>
+</div>
+</div>
+</section>
+<!-- BEST SELLERS CAROUSEL -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-12 mb-12">
+<h2 class="text-4xl font-headline font-black tracking-tighter uppercase">BEST SELLERS</h2>
+</div>
+<div class="flex gap-6 kinetic-scroll overflow-x-auto px-12 pb-12 cursor-grab active:cursor-grabbing">
+<!-- Carousel Card 1 -->
+<div class="flex-none w-80 bg-surface-container-lowest p-6 border-l-4 border-primary">
+<img alt="Gloves" class="w-full h-48 object-contain mb-6" data-alt="pair of professional goalkeeper gloves in black and neon orange with high-grip latex palms on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLeQQL-REm_FQrNJAQLy9Syl9akhAktJqyaMMMOt7qwOPg_oRMczsWR0iqOKS_w7oZtc97Eu1ur9TC9W8QWQCfwUC6VayydBcfaMQRYIq_u09JlEPIGgGK4URgYKZMLqICVRlbU4T4R1CtY2YQQyhtci4e3ept0MIGs0_x88nRByYLIpLdWpX7xTfpkbkF7E39o3eW0n1DJAh6AUvx7wvV4qVjsPayF_QHRCdg3JuiyEYRa0jh8yLS-xRhzq4P9DoFpAiMX6mJ6A"/>
+<p class="font-label text-[10px] text-primary font-bold uppercase mb-1">MOST POPULAR</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">SHIELD PRO G1</h4>
+<p class="font-body text-sm text-secondary mb-4">Elite level grip and wrist support.</p>
+<p class="font-headline font-bold">$110.00</p>
+</div>
+<!-- Carousel Card 2 -->
+<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
+<img alt="Match Ball" class="w-full h-48 object-contain mb-6" data-alt="professional match football with metallic silver finish and embossed texture on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHoUTO2WL-nEIxcQbCD8tLsFOYyFzRdvZcbc2zdUwGm1dYXfzKCAasZ__cVct_ikQQD4NPRPxcTkOUNTSaq1WUSxkWXYDfO9UfwHtrcOyQhDpze-WodhRhz8k7dArBmQedhAjJ1jcmwnzPA1gffh7Jw5myJDeiIW9QxxEyZDG5AO8W53E8nOfaL1xOt2Ca8Sfz1O0yRB1hDvgw4nxG92cNF5ru3gojBBEFzWhvbijMl_sV503j1piFOhKGRXfLFs6zKijePuvGmg"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">TRAINING ESSENTIAL</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">STRIKE BALL V5</h4>
+<p class="font-body text-sm text-secondary mb-4">Aerodynamic precision for training.</p>
+<p class="font-headline font-bold">$45.00</p>
+</div>
+<!-- Carousel Card 3 -->
+<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
+<img alt="Jersey" class="w-full h-48 object-contain mb-6" data-alt="high-performance compression training jersey in deep red with laser-cut ventilation holes on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgr8B7qqBHSTgCOuu5GNZj-C_lRUcATS1QHcNGb_DcTD3WPxuo6zWH3BJw3HrgkXXhLSDOSFlK2EjIwsrjK2TWczk2aKLe3iE8sjntm_ktAjoPrxGIJbHG6Jx3r6PUtlp69QU7dd38Za2drJ0E652JENHabZfjNPKw3BU9XrVMAyx5V5jCDs_pssdRAkIB37Eas5jXOEGDyAK3EwsKKv2clP-894nBWKHWry7jf9uBVbxwoi_z5HPdhwidwiMhS5R9li9qu00H-g"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">BEST FOR PERFORMANCE</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">AERO-KNIT TOP</h4>
+<p class="font-body text-sm text-secondary mb-4">Moisture-wicking athletic fit.</p>
+<p class="font-headline font-bold">$85.00</p>
+</div>
+<!-- Carousel Card 4 -->
+<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
+<img alt="Socks" class="w-full h-48 object-contain mb-6" data-alt="professional football grip socks in white with non-slip silicone pads on the sole on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH4fjsDIXmqvVJnQorH4Hkx8FW8SMdO0crGY74GNstOimjshwi4YPj1JfpTKUVZ_xckiIYYg7rvhGYRL7mny80UUhRQWh7mzErFWRSKa9vPOgWzdJPbonHl4sqbvHZ01nSr8L8nnYI5bjLRxx6jMWxqdKiYDxNd1dnGfqGby849ZfwjB41SeOT10VHuXlbf1xx69jjs6pATfrfukpw3LFjeLl2lbK84vE30k49CQ5YSYeaV1EgkA8u65et-5Gqow9KH3rHT7wFiw"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">PLAYERS CHOICE</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">GRIP-TEC SOCKS</h4>
+<p class="font-body text-sm text-secondary mb-4">Lock your foot inside the boot.</p>
+<p class="font-headline font-bold">$25.00</p>
+</div>
+<!-- Carousel Card 5 -->
+<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
+<img alt="Turf Boot" class="w-full h-48 object-contain mb-6" data-alt="low profile turf football shoes in metallic gold with rubber lug outsole on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPgGqMN1s6JXD3c4tV2uCVjAd-8T4-RXFFdGdYGnY5OidduIabHabVKGlTAqHr5TZVOBSA3JrUExqWCAQNzdiEJ8eDNR3sXxMg4VyMjOSpp3iNvDd7wY3mlMrwvBRtNDFFye8xaHnswkA0E6tlG1JZY39c7zNNBxTyfKLKTVqUDV_Ts6RO8TsODdEyRkJjbeIuciHC1IRx8su9owSCSxB2DA8snWegVZgX5y4FhqUM6OQiVNkpNMqWRQ3I7KEAEalPwfbNugtZSw"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">STREET KINGS</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">STREET ELITE TF</h4>
+<p class="font-body text-sm text-secondary mb-4">Supreme touch on synthetic turf.</p>
+<p class="font-headline font-bold">$130.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-[#e5e2e1] w-full mt-auto">
+<div class="max-w-7xl mx-auto px-12 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2">
+<div class="text-xl font-black text-black font-headline mb-6">KINETIC ARCHIVE</div>
+<p class="font-['Inter'] text-sm tracking-tight text-gray-600 mb-8 max-w-sm">
+                    The ultimate destination for professional football performance. Engineered for the pitch, curated for the archive. Join the elite.
+                </p>
+<div class="flex gap-4">
+<div class="w-10 h-10 bg-black rounded-full flex items-center justify-center cursor-pointer hover:bg-primary transition-all">
+<img alt="Instagram" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3t3pxHgnxgcLsCkpCrboBCUtXDQi64Jcc3cMKi3UaVuaVIx_pCBMWjOOQIySlVfsTnBX5hCkL1K20o7htbCenRZx9OjoG0iifaLiHsRJI17qnQ0Z-iB2IyCB5ufUEjoVDn3anEYM6uqRUP9JZsSLsDDydyWyvt8669L_H-jYslIxnOEk-o06jRBj1BPmeW8tkE5DLybFdP6c5-TVLYTDYaupjAFHcGbRfyNeMHni-QAHYkBMgozpmK3ypzRdHNNYD91-ugFE8QA"/>
+</div>
+<div class="w-10 h-10 bg-black rounded-full flex items-center justify-center cursor-pointer hover:bg-primary transition-all">
+<img alt="X" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjeKoAJVN8HyNqlxpiMA11gmB6TLbxb7m5OxA7VK0mgD9Jc75LoHhSNr44n3LiyRuPtouIy-INOYtaQ181MavBoqRbuL3O2o6vKaTvPJzdPjXP7IMxGkNciEUXbZHYqsKl3grPCAuPq9XeRiB_HsQ9xaZ3kTixptlEROtX5dWNB-mZvpjCQrwgGHFrNmNB4LYSdXRWFutxUiDC3fsZgRAf1grv9RbZr0C8d6clXyDZ_tXCQQ5ksd2iXMMh1hZDcU54-bybaFdTlQ"/>
+</div>
+<div class="w-10 h-10 bg-black rounded-full flex items-center justify-center cursor-pointer hover:bg-primary transition-all">
+<img alt="YouTube" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDouQlJVPsb2aXnLkhrFxYGciJvb2fDz2fq6QjZ-4E8T2Nq8KHtUo6xUBeivQsQsueT2dXdSncZAANJ-FgBbeHNYrf27pCicv7v8tSL4DSfpg0r4xuAAVfDvTkKIXKpkEVcTKIBvO0zVGnYtSRz6-ZNLwgtzjT1tJKnT7pbKWjSNwEZY5SRtsR39DmGKMrhCU2Boe6Rg66Q1uLwSsuNjnErSTOoLP_14OW0SnyeD64BJCmQkbCTilTbrqzSV4YbzpOnA59tSntcdA"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-headline font-black text-sm uppercase tracking-widest mb-2">SERVICES</h5>
+<a class="font-['Inter'] text-sm tracking-tight text-gray-600 hover:text-[#ED1C24] transition-all" href="#">CUSTOMER SERVICE</a>
+<a class="font-['Inter'] text-sm tracking-tight text-gray-600 hover:text-[#ED1C24] transition-all" href="#">SHIPPING &amp; RETURNS</a>
+<a class="font-['Inter'] text-sm tracking-tight text-gray-600 hover:text-[#ED1C24] transition-all" href="#">SIZE GUIDE</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-headline font-black text-sm uppercase tracking-widest mb-2">COMPANY</h5>
+<a class="font-['Inter'] text-sm tracking-tight text-gray-600 hover:text-[#ED1C24] transition-all" href="#">STADIUM FINDER</a>
+<a class="font-['Inter'] text-sm tracking-tight text-gray-600 hover:text-[#ED1C24] transition-all" href="#">CONTACT</a>
+<a class="font-['Inter'] text-sm tracking-tight text-gray-600 hover:text-[#ED1C24] transition-all" href="#">PRIVACY POLICY</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-['Inter'] text-xs tracking-tight text-gray-500 uppercase">© 2024 KINETIC ARCHIVE. ENGINEERED FOR THE PITCH.</p>
+<div class="flex gap-6 items-center">
+<img alt="Visa" class="h-4 grayscale opacity-50" data-alt="visa payment card logo in gray scale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXBzNtA0T01bbyjkmv_jpE7W9OpaOrP9BfQjz_JlFBRzcwcKc0j2kGLCcdQOYfmvTMU-tFllTPhNnLOhSsU0bmEUbxkrbkYpSKkvP06uvlSrl-2vs2c9it9Bhw1EyyTyPbBKbIGp8hdN2PSZ4klPBEJSetYMGQt_zUKu1Fd5BQOp-PoDWjhlg_KFLaLysZejzckefdxpIYKiwwKUcek1NPWj7F7ANdZeZ2rxQyTU4c0aLquwQy8ivIXAT39DJKw9gB6ntnCMdOUg"/>
+<img alt="Mastercard" class="h-4 grayscale opacity-50" data-alt="mastercard payment card logo in gray scale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIsgUCxTDQGNJVS0ev1U7hlaBbIZB2PS0bFA5Zb2Sw35nJ3Z3_ggIb7PSJnr7_zGfJ3BRg_bXGc0ZRqqXmtkl745w3aNcfosPywJOVXUSKzDiWWcOrFd2hlKKfn2RefF55tR-93gj2_PvEUVwmBuyv_97HqkROO1puhUnfOkntqJVGMFAST8DIofPgcQ3r9ZNrj7DhZw_wPj2mwIJ97M6ymHgsEkRUyH62VTnYlh6v_DbcyXVYlJbWWKEcu2fWUqODJw1Xiw7XhQ"/>
+<img alt="Apple Pay" class="h-4 grayscale opacity-50" data-alt="apple pay logo in gray scale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYwdnQikSXct9UsKA_WnILVxn3MtFQavLkWOod6Sap810XmyBDQMuIilNiUai3yM6HmBi9DDlniEqXLzueW5ooJpm3pKOxUQNYvIiV3M716h1YEkBFkvxW9vTm1lLKrth39qZsq2cNjeX7pzn8OJ-e4sQpss5Zcy-5NEBTNyuoCRyYO-2XdHdX2_JKqfFR7BtH_fHbNm_XeJ_913AtxeUJKS0_6N4y_LLg5m-1q0SU70Puv3nsMmX2e8SCgYNXXV5XjYQWCDCYSA"/>
+</div>
+</div>
+</footer>
+<!-- MOBILE FAB (Only on Mobile) -->
+<button class="md:hidden fixed bottom-8 right-8 w-16 h-16 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center z-50">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+</button>
+</body></html>
