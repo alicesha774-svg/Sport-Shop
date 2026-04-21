@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#e5e2e1",
+                    "inverse-on-surface": "#f3f0ef",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#5a5c5d",
+                    "on-surface-variant": "#5e3f3c",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "outline-variant": "#e8bcb7",
+                    "primary-container": "#e71520",
+                    "secondary-fixed": "#e5e2e1",
+                    "tertiary-fixed": "#e2e2e3",
+                    "primary": "#bb0013",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#ebe7e7",
+                    "primary-fixed": "#ffdad6",
+                    "tertiary-container": "#737576",
+                    "surface-tint": "#c00014",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "surface-container": "#f0edec",
+                    "secondary": "#5f5e5e",
+                    "on-secondary-container": "#656464",
+                    "surface-variant": "#e5e2e1",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "surface-dim": "#dcd9d9",
+                    "on-tertiary-container": "#fcfcfd",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#ffb4ab",
+                    "background": "#fcf9f8",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "on-surface": "#1c1b1b",
+                    "on-secondary-fixed-variant": "#474646",
+                    "on-primary-container": "#fffbff",
+                    "surface-bright": "#fcf9f8",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "outline": "#936e6a",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-fixed-variant": "#93000d",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#410002",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1c1b1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .kinetic-header {
+        letter-spacing: -0.05em;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 dark:bg-black/70 backdrop-blur-xl flex justify-between items-center w-full px-8 h-20">
+<div class="text-2xl font-black italic text-black dark:text-white font-headline tracking-tighter">KINETIC ARCHIVE</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1 hover:text-[#ED1C24] transition-colors duration-200" href="/html/boots.html">BOOTS</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">GLOVES</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">APPAREL</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">EQUIPMENT</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">LATEST</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">SALE</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">shopping_bag</button>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">person</button>
+</div>
+</nav>
+<main class="pt-20 min-h-screen flex flex-col md:flex-row">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-72 bg-surface-container-low p-8 sticky top-20 h-fit md:h-[calc(100vh-5rem)] overflow-y-auto no-scrollbar">
+<div class="mb-10">
+<h3 class="font-headline font-black text-xl mb-6 tracking-tight uppercase">Archive Filters</h3>
+<!-- Filter Group: Brand -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Brand</label>
+<div class="space-y-3">
+<label class="flex items-center cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">NIKE ARCHIVE</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input checked="" class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">ADIDAS PERFORMANCE</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">PUMA KINETIC</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Surface -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Surface Type</label>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary text-on-primary rounded-full text-xs font-medium cursor-pointer">Firm Ground (FG)</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer">Soft Ground (SG)</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer">Artificial Grass (AG)</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer">Turf (TF)</span>
+</div>
+</div>
+<!-- Filter Group: Size -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Size (UK)</label>
+<div class="grid grid-cols-4 gap-2">
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">7</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">7.5</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">8</div>
+<div class="h-10 flex items-center justify-center border border-primary text-primary font-bold bg-surface-container text-sm font-label cursor-pointer">8.5</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">9</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">9.5</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">10</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">11</div>
+</div>
+</div>
+<!-- Filter Group: Color -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Engineered Tones</label>
+<div class="flex gap-3">
+<div class="w-6 h-6 rounded-full bg-on-surface ring-2 ring-offset-2 ring-primary cursor-pointer"></div>
+<div class="w-6 h-6 rounded-full bg-white border border-outline-variant cursor-pointer"></div>
+<div class="w-6 h-6 rounded-full bg-primary cursor-pointer"></div>
+<div class="w-6 h-6 rounded-full bg-blue-600 cursor-pointer"></div>
+<div class="w-6 h-6 rounded-full bg-yellow-400 cursor-pointer"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-on-surface text-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-primary transition-colors duration-300">Clear All Filters</button>
+</aside>
+<!-- Product Content Area -->
+<section class="flex-1 bg-surface-container-low">
+<!-- Hero Header -->
+<header class="px-8 py-16 bg-surface border-b border-surface-container-high">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<span class="font-label text-xs font-bold text-primary tracking-[0.4em] uppercase mb-4 block">Performance Lab v2.0</span>
+<h1 class="font-headline font-black text-6xl md:text-8xl kinetic-header uppercase leading-none text-on-surface">VELOCITY<br/>STRIKE</h1>
+</div>
+<div class="max-w-md text-right">
+<p class="font-body text-secondary text-sm leading-relaxed mb-6">Explore the next evolution of pitch performance. Every boot in our archive is selected for precision, response, and raw acceleration.</p>
+<div class="flex items-center justify-end space-x-4">
+<span class="font-label text-xs text-on-surface-variant uppercase">Sorting by: <span class="font-bold text-on-surface">Relevance</span></span>
+<span class="material-symbols-outlined text-on-surface">tune</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Product Grid -->
+<div class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="absolute top-8 left-8">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">New Release</span>
+</div>
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Performance Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Modern professional football boot in vibrant crimson red with sleek aerodynamic silhouette and high-performance carbon fiber soleplate texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB79OVJPyZTrbcPWMpYAwlw4svYNXWhbJLL7lu3OhOZZjZ6BRkGsqteWoB4j726npbynW_EXxkufNgRcS645eVaHyYlKkJPBUzn_SMXyj4dC6FJIMVOq29r4N2dTqSWNyTTg13CqLFu2IMeTtJ8yHiYYpLfCrjkm-pXOMgmKMeqAZOzNMgJiVWvGKzroldED39ALcSQ6cxiwhFeHkHvso9-XGUr5Gl0_8i1zGsqvhbT0wLQ1-D8WSRxT_E6YQAJUNTR4Np2hOQwbw"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">Pulse Elite FG</h3>
+<span class="font-headline font-bold text-xl">$245.00</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Crimson / Obsidian Black</p>
+<div class="mt-auto flex gap-2">
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
+<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="absolute top-8 left-8">
+<span class="bg-on-surface text-surface text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Pre-Order</span>
+</div>
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="White Soccer Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist white professional soccer boot with neon lime accents and futuristic textured upper on a clean grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlmDqKdFWKqeC17YvtR76-mZ38oQZwbt5nv5jQnPJKDvLMFYXtozyxvTwZsekyXF7cLurleAzNoJuhFwxG6f17uB-Ok2lUP4Y0g9vcuFTpGtDhalGH_4BZ5bmbe-3kQJEdugFfV0lx7mZQFH775I50_HoWwYNRm9WzdCslOGPp5H1RLQbOYqKQlDHNpQSBEMSFaBqLGtv1hi7gt8YCttDC4nU_l2-5OfxRcWFs7_5tJBvB9eq1bZb3lIlhX-c6yCDtazz1EgjHIA"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">Phantom Kinetic</h3>
+<span class="font-headline font-bold text-xl">$210.00</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Pure White / Neon Acid</p>
+<div class="mt-auto flex gap-2">
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Pre-Order</button>
+<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Stealth Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Stealth black matte football boot with subtle gloss details and aggressive stud configuration for maximum traction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrlmjunNWJlQulQ9lWK9fyI6xnHbDkpiUV44liqsEtPvOuGp1Tr7jZ1-2f6PungQxgiX-QJ9PZrZ4sVFOVJYW7u0a60A3BaxDmxnyCgitB2DAlWHEmQsy2CcTZ7ceG0t9QTBw6st76Z61iRAdpAha0F7g_jyibCOoWNcOYVZUpMUWcleV8yAGqycRNJV7PC69U9CZAqHNvGcGxRz87XzDODFIxw3_fUfvzaXPilKewx0o8Fe6lAQiMOWQLC63cbw3TH_R5WcF7GQ"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">Apex Shadow TF</h3>
+<span class="font-headline font-bold text-xl">$185.00</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Stealth Black / Carbon</p>
+<div class="mt-auto flex gap-2">
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
+<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGOOnTf0znurv72zhropzUUG3KoT3sbaR1l_pr1E6jy8F3LcIobpW_hbpGLXfVhb2EwZ1lVh6OeuaSZPe8ehB49g3y1cCmlYiNWLiOLL7O5n4BX2_0t6lXYTtEa84HkN9Am8Bz3baP010NyZu8pLb8qiSsZv5DU-kjwAhyDVuXs5nbFF5QksZYn3vQwTKAoVOetdjFxBk7Dk65_H2Fea3md1AB8pm7Ym6-rwzOgScC5kvlcnj37sN6J3MRuNAf87pUldrO5Vit5w"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">Velocity Flux AG</h3>
+<span class="font-headline font-bold text-xl">$220.00</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Volt Blue / Solar Orange</p>
+<div class="mt-auto flex gap-2">
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
+<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="absolute top-8 left-8">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Sold Out</span>
+</div>
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden opacity-50 grayscale">
+<img alt="Gold Boot" class="max-w-full max-h-full object-contain" data-alt="Limited edition metallic gold football cleat with premium knit collar and ornate detailing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKOb-fZhLKSWWCNK3o9t4gW9KbCHoIoTz4SY7SnKd3fKZtUzkMITvGB3Jgsr6_xhcs5f6VmO7OLIKJEmSv-tlq6iHw2ku70dOttOdAPqJBy_lA59UVn_vxtqrzBIDGyxEAs8cRi8WDam-ZiyBjmIGJRXl3D_WlVAD-wmIFLq2k-YrodgXnaoiT5syCEtaAt_i2QiDzT0BCcC2I2o1y_7g7o4fsawTXK1dJ2EqGVKGR5-Po6XjFvcoxc3cjVfzrH345Qh-TU4qB9Q"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight opacity-50">Grand Finale Pro</h3>
+<span class="font-headline font-bold text-xl opacity-50">$320.00</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Trophy Gold / Obsidian</p>
+<div class="mt-auto flex gap-2">
+<button class="flex-1 bg-secondary text-surface text-xs font-bold py-4 uppercase tracking-widest rounded-sm cursor-not-allowed" disabled="">Notify Me</button>
+<button class="w-12 flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Grey Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Wolf grey performance boot with multi-layered technical mesh and striking red laces for an aggressive athletic look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwOxUaYc145tMpEiVo2vzjQS5x36C101IjsANVZmbm9JccMieZlin9upzr3sCYXNh2uOsS2ZwOQAPTHHbf7v3PnDS9ExgN9U8YGY4RCLnbR6YIZHraLYibHwXJGtGNcWgJgCGCY_9s94fyp18S0v5jHvgrzFDUXi3M6mNKbTwN0StQcdQJy0IKywGrNCkGhm5LCIZyMmhkkAMmz_Ipfk-vT2V_5u-f4pbqGojxUEJ5IQQ2K-cVNNxVLNMOzc8Q_qqYdlsmkA0kGA"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">Catalyst Strike</h3>
+<span class="font-headline font-bold text-xl">$195.00</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Wolf Grey / Solar Red</p>
+<div class="mt-auto flex gap-2">
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
+<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination/Load More -->
+<div class="p-16 flex flex-col items-center">
+<div class="w-full h-px bg-surface-container-high mb-12"></div>
+<button class="border-2 border-on-surface px-12 py-5 font-headline font-black text-sm tracking-[0.2em] uppercase hover:bg-on-surface hover:text-surface transition-all duration-300">Load More Archives</button>
+<p class="font-label text-xs text-secondary mt-6 uppercase tracking-widest">Showing 6 of 124 performance artifacts</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#e5e2e1] dark:bg-[#1a1a1a] w-full mt-auto">
+<div class="max-w-7xl mx-auto px-12 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-black text-black dark:text-white font-headline mb-6 tracking-tighter">KINETIC ARCHIVE</div>
+<p class="font-['Inter'] text-sm tracking-tight text-gray-600 dark:text-gray-400 mb-6 max-w-xs leading-relaxed">Defining the speed of sport through precise engineering and archival curation. Made for the athletes who command the future.</p>
+<div class="flex space-x-4">
+<div class="w-8 h-8 flex items-center justify-center border border-gray-400 rounded-full hover:border-primary hover:text-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm">public</span></div>
+<div class="w-8 h-8 flex items-center justify-center border border-gray-400 rounded-full hover:border-primary hover:text-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm">alternate_email</span></div>
+</div>
+</div>
+<div>
+<h4 class="font-['Inter'] text-sm tracking-tight text-black dark:text-white font-bold mb-6 uppercase">Customer Service</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Size Guide</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Order Tracking</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Inter'] text-sm tracking-tight text-black dark:text-white font-bold mb-6 uppercase">Exploration</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="">Stadium Finder</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Archive Labs</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Athletes</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Inter'] text-sm tracking-tight text-black dark:text-white font-bold mb-6 uppercase">Contact &amp; Privacy</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Contact</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Privacy Policy</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="#">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-300 dark:border-gray-800 py-8 px-12 text-center">
+<p class="font-['Inter'] text-sm tracking-tight text-gray-500 uppercase font-bold">© 2024 KINETIC ARCHIVE. ENGINEERED FOR THE PITCH.</p>
+</div>
+</footer>
+</body></html>
