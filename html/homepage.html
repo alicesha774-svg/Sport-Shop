@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>KINETIC ARCHIVE | Home</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#bb0013",
+            "primary-container": "#e71520",
+            surface: "#fcf9f8",
+            "surface-container-low": "#f6f3f2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#e5e2e1",
+            "on-surface": "#1c1b1b",
+            secondary: "#5f5e5e"
+          },
+          fontFamily: {
+            headline: ["Space Grotesk"],
+            body: ["Inter"],
+            label: ["Work Sans"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+  <nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-8 h-20 border-b border-black/5">
+    <div class="flex items-center gap-10">
+      <a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">KINETIC ARCHIVE</a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./boots.html">BOOTS</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./cloth.html">CLOTH</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./contact.html">CONTACT</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./menu.html">MENU</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1" href="./homepage.html">HOME</a>
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" data-auth-link href="./login.html">LOGIN</a>
+      <span class="hidden md:inline text-sm text-secondary" data-auth-only>Hi, <span data-auth-name>Guest</span></span>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="relative min-h-[80vh] overflow-hidden flex items-center px-8 md:px-12 lg:px-20">
+      <img alt="Hero boots" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAncQFZKaOGUZ-uNp5b2s9U1OdqpaATFT33vK8AGbDrXi_tynUDYh5JgJUrLWDubPuo3ZHNUymxWLQYcQd_ViNvmWWX1Cnhee9R2icjpXGHKQwJOsNQYjuMYqprZ4nOxzcILJvCG3yvJcD4tpSwSvZsi0Vnd2RjUZzc3FtWW7KjEeBzzWjMfAWwDdBoxFfQuQlSUACY33KvsKSUS1TWig6a2eQVWePwLz27KS08CTRFJK_F5mSMxOnQiSUOrAFHWqKmg6IhHaNCTQ"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/15"></div>
+      <div class="relative z-10 max-w-4xl text-white">
+        <p class="font-label tracking-[0.35em] uppercase text-[#ffb4ab] mb-5">Performance Football Curated</p>
+        <h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-black uppercase leading-[0.85] tracking-tighter mb-8">
+          Own The<br/>Next Drop
+        </h1>
+        <p class="max-w-2xl text-lg md:text-xl text-white/80 leading-relaxed mb-10">
+          Browse rare boots and kinetic apparel, then sign in to keep your member profile, fast checkout details, and saved pieces connected to this browser.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-black uppercase tracking-[0.16em] hover:scale-[1.02] transition-transform" href="./menu.html">
+            Open Member Menu
+          </a>
+          <a class="px-8 py-4 bg-white/10 border border-white/20 backdrop-blur-md text-white font-headline font-black uppercase tracking-[0.16em] hover:bg-white hover:text-black transition-colors" href="./login.html">
+            Sign In
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-8 md:px-12 lg:px-20 py-20 bg-surface-container-low">
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="bg-surface-container-lowest p-8">
+          <p class="font-label text-xs uppercase tracking-[0.26em] text-secondary mb-3">Login Ready</p>
+          <h2 class="font-headline text-3xl font-black uppercase tracking-tight mb-4">Persistent Session</h2>
+          <p class="text-secondary leading-relaxed">Once you sign in, the site remembers you in this browser and updates the navigation to your account area.</p>
+        </article>
+        <article class="bg-surface-container-lowest p-8">
+          <p class="font-label text-xs uppercase tracking-[0.26em] text-secondary mb-3">Protected Page</p>
+          <h2 class="font-headline text-3xl font-black uppercase tracking-tight mb-4">Member Menu</h2>
+          <p class="text-secondary leading-relaxed">The menu page now checks auth first and redirects guests to the login screen before showing account details.</p>
+        </article>
+        <article class="bg-surface-container-lowest p-8">
+          <p class="font-label text-xs uppercase tracking-[0.26em] text-secondary mb-3">Quick Start</p>
+          <h2 class="font-headline text-3xl font-black uppercase tracking-tight mb-4">Demo Account</h2>
+          <p class="text-secondary leading-relaxed">Use the built-in demo profile right away, or create a fresh account directly from the login page.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../src/auth.js"></script>
+</body>
+</html>

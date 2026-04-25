@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>KINETIC ARCHIVE | Member Menu</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#bb0013",
+            "primary-container": "#e71520",
+            surface: "#fcf9f8",
+            "surface-container-low": "#f6f3f2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#e5e2e1",
+            "surface-container-high": "#ebe7e7",
+            "on-surface": "#1c1b1b",
+            secondary: "#5f5e5e"
+          },
+          fontFamily: {
+            headline: ["Space Grotesk"],
+            body: ["Inter"],
+            label: ["Work Sans"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface" data-requires-auth="true">
+  <nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-8 h-20 border-b border-black/5">
+    <div class="flex items-center gap-10">
+      <a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">KINETIC ARCHIVE</a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./boots.html">BOOTS</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./cloth.html">CLOTH</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./contact.html">CONTACT</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1" href="./menu.html">MENU</a>
+        <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./homepage.html">HOME</a>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="hidden md:inline text-sm text-secondary">Signed in as <span class="font-semibold text-black" data-auth-name>Guest</span></span>
+      <button class="px-4 py-2 border border-black/10 font-headline text-xs font-bold uppercase tracking-[0.2em] hover:border-primary hover:text-primary transition-colors" data-logout type="button">
+        Logout
+      </button>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="px-8 md:px-12 lg:px-20 py-16 bg-surface-container-low">
+      <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="bg-surface-container-lowest p-8 md:p-10">
+          <p class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-3">Member Console</p>
+          <h1 class="font-headline text-5xl md:text-6xl font-black uppercase leading-none tracking-tighter mb-4" data-menu-greeting>
+            Welcome back.
+          </h1>
+          <p class="max-w-2xl text-secondary text-lg leading-relaxed mb-8">
+            This protected page is only available after login. Right now it acts like an account hub for browsing the shop and managing your saved identity.
+          </p>
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div class="bg-surface p-5 border border-black/5">
+              <p class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-2">Account Email</p>
+              <p class="font-semibold" data-menu-email></p>
+            </div>
+            <div class="bg-surface p-5 border border-black/5">
+              <p class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-2">Member Since</p>
+              <p class="font-semibold" data-menu-joined></p>
+            </div>
+            <div class="bg-surface p-5 border border-black/5">
+              <p class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-2">Session Status</p>
+              <p class="font-semibold text-emerald-700">Authenticated</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="bg-black text-white p-8 md:p-10 flex flex-col justify-between">
+          <div>
+            <p class="font-label text-xs uppercase tracking-[0.3em] text-[#ffb4ab] mb-3">Quick Actions</p>
+            <h2 class="font-headline text-4xl font-black uppercase tracking-tight mb-6">Continue Shopping</h2>
+          </div>
+          <div class="space-y-4">
+            <a class="flex items-center justify-between border border-white/15 px-5 py-4 hover:bg-white hover:text-black transition-colors" href="./boots.html">
+              <span class="font-headline font-bold uppercase tracking-[0.16em]">Boots Collection</span>
+              <span class="material-symbols-outlined">north_east</span>
+            </a>
+            <a class="flex items-center justify-between border border-white/15 px-5 py-4 hover:bg-white hover:text-black transition-colors" href="./cloth.html">
+              <span class="font-headline font-bold uppercase tracking-[0.16em]">Cloth Collection</span>
+              <span class="material-symbols-outlined">north_east</span>
+            </a>
+            <a class="flex items-center justify-between border border-white/15 px-5 py-4 hover:bg-white hover:text-black transition-colors" href="./contact.html">
+              <span class="font-headline font-bold uppercase tracking-[0.16em]">Contact Studio</span>
+              <span class="material-symbols-outlined">north_east</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="../src/auth.js"></script>
+</body>
+</html>

@@ -89,18 +89,16 @@
 <!-- TOP NAVIGATION BAR -->
 <nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 backdrop-blur-xl flex justify-between items-center w-full px-8 h-20">
 <div class="flex items-center gap-12">
-<a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="#">KINETIC ARCHIVE</a>
+<a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">KINETIC ARCHIVE</a>
 <div class="hidden md:flex gap-8 items-center">
-<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="/html/boots.html">BOOTS</a>
-<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">GLOVES</a>
-<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">APPAREL</a>
-<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">EQUIPMENT</a>
-<a class="font-headline font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1" href="#">LATEST</a>
-<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="#">SALE</a>
-</div>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./boots.html">BOOTS</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1" href="./cloth.html">CLOTH</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./contact.html">CONTACT</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./menu.html">MENU</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./homepage.html">HOME</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="material-symbols-outlined text-black hover:text-[#ED1C24] transition-all">person</button>
+<a class="material-symbols-outlined text-black hover:text-[#ED1C24] transition-all" data-auth-icon="true" data-auth-link href="./login.html">person</a>
 <div class="relative group cursor-pointer">
 <span class="material-symbols-outlined text-black group-hover:text-[#ED1C24] transition-all">shopping_bag</span>
 <span class="absolute -top-1 -right-1 bg-primary text-[10px] text-white w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
@@ -283,7 +281,7 @@
 </div>
 </section>
 </main>
-<!-- FOOTER -->
+
 <footer class="bg-[#e5e2e1] w-full mt-auto">
 <div class="max-w-7xl mx-auto px-12 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
 <div class="col-span-2">
@@ -325,8 +323,9 @@
 </div>
 </div>
 </footer>
-<!-- MOBILE FAB (Only on Mobile) -->
+
 <button class="md:hidden fixed bottom-8 right-8 w-16 h-16 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center z-50">
 <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
 </button>
+<script src="../src/auth.js"></script>
 </body></html>
