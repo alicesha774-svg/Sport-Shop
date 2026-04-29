@@ -4,6 +4,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>KINETIC ARCHIVE | Performance Football Hub</title>
+<script src="../src/theme.js"></script>
+<link href="../style/site-theme.css" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -87,7 +89,7 @@
 </head>
 <body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-white">
 <!-- TOP NAVIGATION BAR -->
-<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 backdrop-blur-xl flex justify-between items-center w-full px-8 h-20">
+<nav class="theme-nav fixed top-0 w-full z-50 backdrop-blur-xl flex justify-between items-center w-full px-8 h-20 border-b border-black/5">
 <div class="flex items-center gap-12">
 <a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">KINETIC ARCHIVE</a>
 <div class="hidden md:flex gap-8 items-center">
@@ -97,7 +99,12 @@
 <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./menu.html">MENU</a>
 <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./homepage.html">HOME</a>
 </div>
+</div>
 <div class="flex items-center gap-6">
+<button class="theme-toggle" data-theme-toggle type="button">
+<span class="material-symbols-outlined theme-toggle__icon" data-theme-icon>dark_mode</span>
+<span class="theme-toggle__label" data-theme-label>Dark mode</span>
+</button>
 <a class="material-symbols-outlined text-black hover:text-[#ED1C24] transition-all" data-auth-icon="true" data-auth-link href="./login.html">person</a>
 <div class="relative group cursor-pointer">
 <span class="material-symbols-outlined text-black group-hover:text-[#ED1C24] transition-all">shopping_bag</span>
@@ -282,7 +289,7 @@
 </section>
 </main>
 
-<footer class="bg-[#e5e2e1] w-full mt-auto">
+<footer class="theme-footer bg-[#e5e2e1] w-full mt-auto">
 <div class="max-w-7xl mx-auto px-12 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
 <div class="col-span-2">
 <div class="text-xl font-black text-black font-headline mb-6">KINETIC ARCHIVE</div>

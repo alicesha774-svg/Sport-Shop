@@ -4,6 +4,8 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>KINETIC ARCHIVE | Home</title>
+  <script src="../src/theme.js"></script>
+  <link href="../style/site-theme.css" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -37,8 +39,8 @@
     }
   </style>
 </head>
-<body class="bg-surface font-body text-on-surface">
-  <nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-8 h-20 border-b border-black/5">
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-white min-h-screen">
+  <nav class="theme-nav fixed top-0 w-full z-50 backdrop-blur-xl flex justify-between items-center px-6 md:px-8 h-20 border-b border-black/5">
     <div class="flex items-center gap-10">
       <a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">KINETIC ARCHIVE</a>
       <div class="hidden md:flex gap-8 items-center">
@@ -50,6 +52,10 @@
       </div>
     </div>
     <div class="flex items-center gap-6">
+      <button class="theme-toggle" data-theme-toggle type="button">
+        <span class="material-symbols-outlined theme-toggle__icon" data-theme-icon>dark_mode</span>
+        <span class="theme-toggle__label" data-theme-label>Dark mode</span>
+      </button>
       <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" data-auth-link href="./login.html">LOGIN</a>
       <span class="hidden md:inline text-sm text-secondary" data-auth-only>Hi, <span data-auth-name>Guest</span></span>
     </div>
