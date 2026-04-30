@@ -1,10 +1,10 @@
-const USER_STORAGE_KEY = "kinetic-archive-users";
-const SESSION_STORAGE_KEY = "kinetic-archive-session";
+const USER_STORAGE_KEY = "f-sport-users";
+const SESSION_STORAGE_KEY = "f-sport-session";
 
 const defaultUsers = [
   {
     name: "Demo Member",
-    email: "demo@kineticarchive.com",
+    email: "demo@f-sport.com",
     password: "Archive123",
     createdAt: "2026-04-25T00:00:00.000Z",
   },

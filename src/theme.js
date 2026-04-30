@@ -1,4 +1,4 @@
-const THEME_STORAGE_KEY = "kinetic-archive-theme";
+const THEME_STORAGE_KEY = "f-sport-theme";
 const themeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
 function readStoredTheme() {
@@ -22,30 +22,16 @@ function applyTheme(theme) {
   root.classList.remove("light", "dark");
   root.classList.add(normalizedTheme);
   root.dataset.theme = normalizedTheme;
-  root.style.colorScheme = normalizedTheme;
 
   return normalizedTheme;
 }
 
 function updateThemeToggles(theme) {
   const nextTheme = theme === "dark" ? "light" : "dark";
-  const nextLabel = nextTheme === "dark" ? "Dark mode" : "Light mode";
-  const nextIcon = nextTheme === "dark" ? "dark_mode" : "light_mode";
 
   document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-    const icon = button.querySelector("[data-theme-icon]");
-    const label = button.querySelector("[data-theme-label]");
-
-    button.setAttribute("aria-label", `Switch to ${nextLabel.toLowerCase()}`);
+    button.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
     button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
-
-    if (icon) {
-      icon.textContent = nextIcon;
-    }
-
-    if (label) {
-      label.textContent = nextLabel;
-    }
   });
 }
 

@@ -51,6 +51,10 @@
   --theme-shadow-strong: 0 28px 80px rgba(14, 18, 24, 0.14);
 }
 
+html.light {
+  color-scheme: light;
+}
+
 html.dark {
   color-scheme: dark;
   --color-primary: 255 124 129;
@@ -165,9 +169,22 @@ span {
 }
 
 .theme-toggle__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
   font-variation-settings: "FILL" 0, "wght" 450, "GRAD" 0, "opsz" 24;
   font-size: 1.15rem;
   line-height: 1;
+}
+
+.theme-toggle__icon::before {
+  content: "dark_mode";
+}
+
+html.dark .theme-toggle__icon::before {
+  content: "light_mode";
 }
 
 .theme-toggle__label {
@@ -177,6 +194,14 @@ span {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.theme-toggle__label::before {
+  content: "Dark mode";
+}
+
+html.dark .theme-toggle__label::before {
+  content: "Light mode";
 }
 
 .theme-input {

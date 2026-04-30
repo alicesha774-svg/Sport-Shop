@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>KINETIC ARCHIVE | Login</title>
+  <title>F-Sport | Login</title>
   <script src="../src/theme.js"></script>
   <link href="../style/site-theme.css" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -43,11 +43,11 @@
 </head>
 <body class="bg-surface font-body text-on-surface min-h-screen">
   <nav class="theme-nav fixed top-0 w-full z-50 backdrop-blur-xl flex justify-between items-center px-6 md:px-8 h-20 border-b border-black/5">
-    <a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">KINETIC ARCHIVE</a>
+    <a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">F-Sport</a>
     <div class="flex items-center gap-4">
-      <button class="theme-toggle" data-theme-toggle type="button">
-        <span class="material-symbols-outlined theme-toggle__icon" data-theme-icon>dark_mode</span>
-        <span class="theme-toggle__label" data-theme-label>Dark mode</span>
+      <button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" data-theme-toggle type="button">
+        <span aria-hidden="true" class="material-symbols-outlined theme-toggle__icon" data-theme-icon></span>
+        <span aria-hidden="true" class="theme-toggle__label" data-theme-label></span>
       </button>
       <div class="hidden md:flex items-center gap-6">
       <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./boots.html">BOOTS</a>
@@ -60,24 +60,23 @@
 
   <main class="min-h-screen grid lg:grid-cols-[1.1fr_0.9fr] pt-20">
     <section class="relative overflow-hidden bg-black text-white px-8 md:px-12 py-14 md:py-20 flex items-end">
-      <img alt="Kinetic football boots" class="absolute inset-0 w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAncQFZKaOGUZ-uNp5b2s9U1OdqpaATFT33vK8AGbDrXi_tynUDYh5JgJUrLWDubPuo3ZHNUymxWLQYcQd_ViNvmWWX1Cnhee9R2icjpXGHKQwJOsNQYjuMYqprZ4nOxzcILJvCG3yvJcD4tpSwSvZsi0Vnd2RjUZzc3FtWW7KjEeBzzWjMfAWwDdBoxFfQuQlSUACY33KvsKSUS1TWig6a2eQVWePwLz27KS08CTRFJK_F5mSMxOnQiSUOrAFHWqKmg6IhHaNCTQ"/>
+      <img alt="F-Sport football boots" class="absolute inset-0 w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAncQFZKaOGUZ-uNp5b2s9U1OdqpaATFT33vK8AGbDrXi_tynUDYh5JgJUrLWDubPuo3ZHNUymxWLQYcQd_ViNvmWWX1Cnhee9R2icjpXGHKQwJOsNQYjuMYqprZ4nOxzcILJvCG3yvJcD4tpSwSvZsi0Vnd2RjUZzc3FtWW7KjEeBzzWjMfAWwDdBoxFfQuQlSUACY33KvsKSUS1TWig6a2eQVWePwLz27KS08CTRFJK_F5mSMxOnQiSUOrAFHWqKmg6IhHaNCTQ"/>
       <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-[#460006]/70 to-[#bb0013]/60"></div>
       <div class="relative z-10 max-w-xl">
         <p class="font-label text-sm tracking-[0.4em] uppercase text-[#ffb4ab] mb-4">Member Access</p>
         <h1 class="font-headline text-5xl md:text-7xl font-black uppercase leading-[0.9] tracking-tighter mb-6">
-          Enter The<br/>Archive
+          Enter Your Info to<br/>Sign in 
         </h1>
         <p class="text-white/80 text-lg leading-relaxed mb-8">
           Sign in to keep your picks, faster checkout details, and saved drops in one place across the shop.
         </p>
         <div class="grid gap-4 sm:grid-cols-2">
           <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5">
-            <p class="font-label text-xs uppercase tracking-[0.28em] text-white/60 mb-2">Demo Email</p>
-            <p class="font-headline text-lg font-bold">demo@kineticarchive.com</p>
+            <p class="font-label text-xs uppercase tracking-[0.28em] text-white/60 mb-2">Your Email</p>
+            <p class="font-headline text-lg font-bold">football@f-sport.com</p>
           </div>
           <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5">
-            <p class="font-label text-xs uppercase tracking-[0.28em] text-white/60 mb-2">Demo Password</p>
-            <p class="font-headline text-lg font-bold">Archive123</p>
+            <p class="font-label text-xs uppercase tracking-[0.28em] text-white/60 mb-2">Enter Your Password</p>
           </div>
         </div>
       </div>
@@ -91,13 +90,15 @@
             <button class="flex-1 rounded-full px-4 py-3 font-headline font-bold uppercase tracking-wider transition-colors" data-active="false" data-auth-tab="signup" type="button">Create Account</button>
           </div>
           <p class="mt-6 text-sm text-secondary leading-relaxed">
-            This login is stored in your browser with local storage, which fits the current front-end-only structure of the project.
+            Already have an account? Sign in to access your personalized experience.
           </p>
         </div>
 
         <div class="p-8 md:p-10">
           <div class="mb-6 rounded-sm border px-4 py-3 text-sm" data-auth-status data-tone="neutral">
-            Use the demo account or your saved profile to continue.
+            <p class="font-medium" data-auth-message>
+              Please enter your credentials to sign in.
+            </p>
           </div>
 
           <div data-auth-panel="signin">
@@ -120,7 +121,7 @@
             <form class="space-y-5" data-register-form>
               <div>
                 <label class="block font-label text-xs uppercase tracking-[0.24em] text-secondary mb-2" for="signup-name">Full Name</label>
-                <input autocomplete="name" class="theme-input w-full border border-outline-variant bg-white px-4 py-4 focus:border-primary focus:ring-primary" id="signup-name" name="name" placeholder="Kinetic Member" type="text"/>
+                <input autocomplete="name" class="theme-input w-full border border-outline-variant bg-white px-4 py-4 focus:border-primary focus:ring-primary" id="signup-name" name="name" placeholder="F-Sport Member" type="text"/>
               </div>
               <div>
                 <label class="block font-label text-xs uppercase tracking-[0.24em] text-secondary mb-2" for="signup-email">Email</label>
