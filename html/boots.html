@@ -1231,4 +1231,123 @@
 </div>
 </footer>
 <script src="../src/auth.js"></script>
+<script>
+
+  // ===== SURFACE TYPE =====
+  const surfaceButtons = document.querySelectorAll('.flex.flex-wrap.gap-2 span');
+
+  surfaceButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+      // remove old active button
+      surfaceButtons.forEach(btn => {
+        btn.classList.remove(
+          'bg-primary',
+          'text-on-primary'
+        );
+
+        btn.classList.add(
+          'bg-secondary-container',
+          'text-on-secondary-container'
+        );
+      });
+
+      // active button
+      button.classList.remove(
+        'bg-secondary-container',
+        'text-on-secondary-container'
+      );
+
+      button.classList.add(
+        'bg-primary',
+        'text-on-primary'
+      );
+
+    });
+
+  });
+
+
+
+  // ===== SIZE BUTTON =====
+  const sizeButtons = document.querySelectorAll('.grid.grid-cols-4.gap-2 > div');
+
+  sizeButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+      // remove old selected
+      sizeButtons.forEach(btn => {
+
+        btn.classList.remove(
+          'border-primary',
+          'text-primary',
+          'font-bold',
+          'bg-surface-container'
+        );
+
+        btn.classList.add(
+          'border-outline-variant'
+        );
+
+      });
+
+      // add new selected
+      button.classList.remove(
+        'border-outline-variant'
+      );
+
+      button.classList.add(
+        'border-primary',
+        'text-primary',
+        'font-bold',
+        'bg-surface-container'
+      );
+
+    });
+
+  });
+
+
+
+  // ===== CLEAR ALL FILTER =====
+  const clearButton = document.querySelector('.bg-black');
+
+  clearButton.addEventListener('click', () => {
+
+    // clear surface
+    surfaceButtons.forEach(btn => {
+
+      btn.classList.remove(
+        'bg-primary',
+        'text-on-primary'
+      );
+
+      btn.classList.add(
+        'bg-secondary-container',
+        'text-on-secondary-container'
+      );
+
+    });
+
+    // clear size
+    sizeButtons.forEach(btn => {
+
+      btn.classList.remove(
+        'border-primary',
+        'text-primary',
+        'font-bold',
+        'bg-surface-container'
+      );
+
+      btn.classList.add(
+        'border-outline-variant'
+      );
+
+    });
+
+  });
+
+</script>
 </body></html>
