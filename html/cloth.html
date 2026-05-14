@@ -107,8 +107,12 @@
 </button>
 <a class="material-symbols-outlined text-black hover:text-[#ED1C24] transition-all" data-auth-icon="true" data-auth-link href="./login.html">person</a>
 <div class="relative group cursor-pointer">
-<span class="material-symbols-outlined text-black group-hover:text-[#ED1C24] transition-all">shopping_bag</span>
-<span class="absolute -top-1 -right-1 bg-primary text-[10px] text-white w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+<button id="cart-icon" class="relative material-symbols-outlined text-on-surface hover:text-primary transition-colors">
+  shopping_bag
+  <span id="cart-count" class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">
+    0
+  </span>
+</button>
 </div>
 </div>
 </nav>
@@ -163,7 +167,10 @@
 <p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2026</p>
 <h3 class="font-headline font-extrabold text-xl mb-1 uppercase">PHNOM PENH CROWN</h3>
 <p class="font-headline text-primary font-bold text-lg mb-6">$22</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="PHNOM PENH CROWN OFFICIAL JERSEY 2026"
+data-price="22"
+data-image="https://gateway.stadiumx.asia/file-1763460725166-149272682.jpg">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -171,13 +178,16 @@
 <!-- Product Card 2 -->
 <div class="bg-surface-container-lowest p-8 flex flex-col group relative">
 <div class="relative h-64 mb-8 overflow-hidden">
-<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="oblique view of a sleek black football boot with neon yellow accents and carbon fiber soleplate on a clean white background" src="https://sangalo.com/cdn/shop/files/svay-rieng-fc-525985.jpg?v=1716216211"/>
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="oblique view of a sleek black football boot with neon yellow accents and carbon fiber soleplate on a clean white background" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDut94ktHEve07DWx2dhbHwNczHytrnslInA&s"/>
 </div>
 <div class="mt-auto">
 <p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2025</p>
 <h3 class="font-headline font-extrabold text-xl mb-1 uppercase">PREAH KHAN REACH SVAY RIENG</h3>
 <p class="font-headline text-primary font-bold text-lg mb-6">$20</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="PREAH KHAN REACH SVAY RIENG OFFICIAL JERSEY 2025"
+data-price="20"
+data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDut94ktHEve07DWx2dhbHwNczHytrnslInA&s">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -191,7 +201,10 @@
 <p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2022</p>
 <h3 class="font-headline font-extrabold text-xl mb-1 uppercase">BOEUNG KET FC</h3>
 <p class="font-headline text-primary font-bold text-lg mb-6">$22</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="BOEUNG KET FC OFFICIAL JERSEY 2022"
+data-price="22"
+data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qbhY1LBJt1lpKB9emueg6ojoDGOW3qRehQ&s">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -205,7 +218,10 @@
 <p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2025</p>
 <h3 class="font-headline font-extrabold text-xl mb-1 uppercase">VISAKHA FC</h3>
 <p class="font-headline text-primary font-bold text-lg mb-6">$25</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="VISAKHA FC OFFICIAL JERSEY 2025"
+data-price="25"
+data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKdWwXdkwzbwWA-C7qx2tDxzxdiqX8y67Xsw&s">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -238,6 +254,12 @@
 <h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL AWAY JERSE 25-26</h4>
 <p class="font-body text-sm text-secondary mb-4">soft and more comfortable</p>
 <p class="font-headline font-bold">$49.99</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL AWAY JERSEY 25-26"
+data-price="49.99"
+data-image="https://www.footballshirtculture.com/images/cwgallery/3332-cambodia-24-25-varaman-away-kit/thumb_3332_cambodia_24_25_varaman_away_kit_a.jpg">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 2 -->
 <div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
@@ -246,6 +268,12 @@
 <h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL THIRD JERSEY 25-26</h4>
 <p class="font-body text-sm text-secondary mb-4">soft and more comfortable</p>
 <p class="font-headline font-bold">$45.00</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL THIRD JERSEY 25-26"
+data-price="45.00"
+data-image="https://www.weston.com.sg/cdn/shop/files/463086060_538289552232977_1680240891361027503_n_1024x1024.jpg?v=1733467018">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 3 -->
 <div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
@@ -254,14 +282,26 @@
 <h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL FOURTH JERSEY 25-26</h4>
 <p class="font-body text-sm text-secondary mb-4">soft and more comfortable fit</p>
 <p class="font-headline font-bold">$48.00</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL FOURTH JERSEY 25-26"
+data-price="48.00"
+data-image="https://gateway.stadiumx.asia/file-1741951680615-549271809.JPG">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 4 -->
 <div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
 <img alt="Socks" class="w-full h-48 object-contain mb-6" data-alt="professional football grip socks in white with non-slip silicone pads on the sole on a white background" src="https://www.footballshirtculture.com/images/cwgallery/3325-cambodia-24-25-varaman-home-kit/3325_cambodia_24_25_varaman_home_kit_a.jpg"/>
 <p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">PLAYERS VERSION</p>
-<h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL HOME JERSEYM 25-26</h4>
+<h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL HOME JERSEY 25-26</h4>
 <p class="font-body text-sm text-secondary mb-4">soft / comfortable fit</p>
 <p class="font-headline font-bold">$49.99</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL HOME JERSEY 25-26"
+data-price="49.99"
+data-image="https://www.footballshirtculture.com/images/cwgallery/3325-cambodia-24-25-varaman-home-kit/3325_cambodia_24_25_varaman_home_kit_a.jpg">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 5 -->
 <div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
@@ -270,6 +310,12 @@
 <h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL HOME JERSEY 24-25</h4>
 <p class="font-body text-sm text-secondary mb-4">cool and easy to wear</p>
 <p class="font-headline font-bold">$30.00</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL HOME JERSEY 24-25"
+data-price="30"
+data-image="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6vkDMdPvucNFlxO0swMLrKOCtocdlnoTitzFFWHdytoF7FM4hR0SzTorEFbO3uutOOgNZhyW_cKIfxE30AvqpohglgZYk1G-2fLo7iJz9cNNDwvOBwOJzPCr3oCXhg9TJWrEXrqJnV_RwAgsmCauJz0E_veVq3PaYBFghaMF-AtYmPcHng1xHddzyBw/s1600/cambodia-22-23-home-away-kits-5.jpg">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 </div>
 </section>
@@ -320,5 +366,152 @@
 <button class="md:hidden fixed bottom-8 right-8 w-16 h-16 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center z-50">
 <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
 </button>
+<div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Cart</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="item-count-label">0 Items</p>
+        </div>
+        <button id="close-cart" class="material-symbols-outlined hover:rotate-90 transition-transform duration-300 cursor-pointer">close</button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50 space-y-4">
+        <div class="flex justify-between items-center">
+            <span class="text-gray-500 uppercase text-xs font-bold">Subtotal</span>
+            <span id="cart-total" class="text-xl font-black">$0.00</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2">
+            <button id="clear-all-cart" class="py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear All</button>
+            <button class="py-3 text-[10px] font-bold uppercase bg-black text-white hover:bg-primary transition-colors">Checkout</button>
+        </div>
+    </div>
+</div>
 <script src="../src/auth.js"></script>
+<script>
+// We define these globally so the "onclick" in the HTML can find them
+let cart = JSON.parse(localStorage.getItem('fSportCart')) || [];
+
+// Function to delete a single item
+function deleteItem(index) {
+    cart.splice(index, 1);
+    // After removing, we need to refresh the UI
+    updateCart();
+}
+
+// We also need to make updateCart accessible
+function updateCart() {
+    const itemsContainer = document.getElementById('cart-items-container');
+    const totalDisplay = document.getElementById('cart-total');
+    const cartCountBadge = document.getElementById('cart-count');
+    const itemCountLabel = document.getElementById('item-count-label');
+
+    // Update the red badge on the bag icon
+    if (cartCountBadge) {
+        cartCountBadge.innerText = cart.length;
+        cart.length > 0 ? cartCountBadge.classList.remove('hidden') : cartCountBadge.classList.add('hidden');
+    }
+    
+    // Update the "X Items" label in the sidebar header
+    if (itemCountLabel) {
+        itemCountLabel.innerText = `${cart.length} Items`;
+    }
+
+    if (!itemsContainer) return;
+
+    itemsContainer.innerHTML = '';
+    let totalMoney = 0;
+
+    if (cart.length === 0) {
+        itemsContainer.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center opacity-30 mt-20">
+                <span class="material-symbols-outlined text-6xl">shopping_bag</span>
+                <p class="uppercase text-[10px] font-bold tracking-widest mt-2">Bag is empty</p>
+            </div>`;
+    } else {
+        cart.forEach((item, index) => {
+            totalMoney += parseFloat(item.price);
+            itemsContainer.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-100 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/80?text=No+Image'">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteItem(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 transition-colors cursor-pointer text-sm">
+                        delete
+                    </button>
+                </div>
+            `;
+        });
+    }
+
+    if (totalDisplay) {
+        totalDisplay.innerText = `$${totalMoney.toFixed(2)}`;
+    }
+    
+    // Save the changes to browser memory
+    localStorage.setItem('fSportCart', JSON.stringify(cart));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('cart-sidebar');
+    const overlay = document.getElementById('cart-overlay');
+    const cartIcon = document.getElementById('cart-icon');
+    const closeBtn = document.getElementById('close-cart');
+    const clearAllBtn = document.getElementById('clear-all-cart');
+    const buyButtons = document.querySelectorAll('.buy-now-btn');
+
+    // Buy Now logic
+    buyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image') 
+            };
+            cart.push(product);
+            updateCart();
+            
+            // Open sidebar automatically
+            sidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    // Clear All logic
+    if (clearAllBtn) {
+        clearAllBtn.addEventListener('click', () => {
+            cart = []; // Empty the array
+            updateCart(); // Refresh UI
+        });
+    }
+
+    // Toggle Sidebar
+    const toggleSidebar = () => {
+        sidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (cartIcon) cartIcon.addEventListener('click', toggleSidebar);
+    if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+    if (overlay) overlay.addEventListener('click', toggleSidebar);
+
+    // Run once on load to show existing items
+    updateCart();
+});
+</script>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+</style>
 </body></html>

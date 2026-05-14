@@ -108,7 +108,16 @@
 <span aria-hidden="true" class="material-symbols-outlined theme-toggle__icon" data-theme-icon></span>
 <span aria-hidden="true" class="theme-toggle__label" data-theme-label></span>
 </button>
-<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">shopping_bag</button>
+<button id="fav-icon" class="relative material-symbols-outlined text-on-surface hover:text-red-500 transition-colors cursor-pointer">
+    favorite
+    <span id="fav-count" class="absolute -top-1 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">0</span>
+  </button>
+<button id="cart-icon" class="relative material-symbols-outlined text-on-surface hover:text-primary transition-colors">
+  shopping_bag
+  <span id="cart-count" class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">
+    0
+  </span>
+</button>
 <a class="material-symbols-outlined text-on-surface hover:text-primary transition-colors" data-auth-icon="true" data-auth-link href="./login.html">person</a>
 </div>
 </nav>
@@ -159,7 +168,9 @@
 <div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">11</div>
 </div>
 </div>
-<button class="w-full bg-on-surface text-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-primary transition-colors duration-300">Clear All Filters</button>
+<button id="clear-filters-btn" class="w-full bg-on-surface text-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-primary transition-colors duration-300">
+  Clear All Filters
+</button>
 </aside>
 <!-- Product Content Area -->
 <section class="flex-1 bg-surface-container-low">
@@ -196,9 +207,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Metallic Silver and Coconut Milk</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MERCURIAL VAPOR 16 ELITE FG SE x PATTA" 
+  data-price="320"
+  data-image="https://static.nike.com/a/images/w_1280,q_auto,f_auto/091f08e3-3abe-4e89-bb10-67b9bd765fe6/mercurial-zoom-vapor-16-elite-fg-se-x-patta-unite-metallic-silver-and-coconut-milk-iq3365-001-release-date.jpg">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MERCURIAL VAPOR 16 ELITE FG SE x PATTA"
+  data-price="320"
+  data-image="https://static.nike.com/a/images/w_1280,q_auto,f_auto/091f08e3-3abe-4e89-bb10-67b9bd765fe6/mercurial-zoom-vapor-16-elite-fg-se-x-patta-unite-metallic-silver-and-coconut-milk-iq3365-001-release-date.jpg">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -215,9 +236,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Colour Shown: Sunset Pulse/Old Royal</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MERCURIAL VAPOR 16 ACADEMY FG/MG VJR" 
+  data-price="112"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9c840ba3-5adf-4b65-b166-c87b811edc43/ZM+VAPOR+16+ACADEMY+FG%2FMG+VJR.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MERCURIAL VAPOR 16 ACADEMY FG/MG VJR"
+  data-price="112"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9c840ba3-5adf-4b65-b166-c87b811edc43/ZM+VAPOR+16+ACADEMY+FG%2FMG+VJR.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -234,9 +265,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Colour Shown: Infrared 23/Grit</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="JORDAN TIEMPO MAESTRO ELITE SE" 
+  data-price="275"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cdcb8e64-bf8b-4632-8217-e0f6de7e7bb1/TIEMPO+MAESTRO+ELITE+FG+SE.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="JORDAN TIEMPO MAESTRO ELITE SE"
+  data-price="275"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cdcb8e64-bf8b-4632-8217-e0f6de7e7bb1/TIEMPO+MAESTRO+ELITE+FG+SE.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -253,9 +294,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Firm-Ground Football Boot</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="KOBE PHANTOM 6 LOW ELITE SE" 
+  data-price="305"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bc1ce9d5-3b2e-4495-a2fd-479fbed20efa/PHANTOM+6+LOW+ELITE+FG+SE.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="KOBE PHANTOM 6 LOW ELITE SE"
+  data-price="305"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bc1ce9d5-3b2e-4495-a2fd-479fbed20efa/PHANTOM+6+LOW+ELITE+FG+SE.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -272,9 +323,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Racer Blue/Pink</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE TIEMPO LIGERA PRO" 
+  data-price="160"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/55273add-a495-4a2b-bfde-ae0afe64e31b/TIEMPO+LIGERA+PRO+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE TIEMPO LIGERA PRO"
+  data-price="160"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/55273add-a495-4a2b-bfde-ae0afe64e31b/TIEMPO+LIGERA+PRO+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -291,9 +352,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Hot Punch/Green Strike/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE PHANTOM 6 LOW ACADEMY 'ERLING HAALAND'" 
+  data-price="170"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0c287f7b-d5a8-496c-831a-d85bf09f40de/PHANTOM+6+LOW+ACAD+FG%2FMG+EH.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE PHANTOM 6 LOW ACADEMY 'ERLING HAALAND'"
+  data-price="170"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0c287f7b-d5a8-496c-831a-d85bf09f40de/PHANTOM+6+LOW+ACAD+FG%2FMG+EH.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -310,31 +381,48 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Firm-Ground Low-Top soccer</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE UNITED MERCURIAL VAPOR 16 ELITE"
+  data-price="280"
+  data-image="https://www.nike.com.kw/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwe558f12f/nk/aaf/0/6/6/2/7/aaf06627_bd5d_4483_81a6_3d1f5c37ae94.png?sw=700&sh=700&sm=fit&q=100&strip=false">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE UNITED MERCURIAL VAPOR 16 ELITE"
+  data-price="280"
+  data-image="https://www.nike.com.kw/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwe558f12f/nk/aaf/0/6/6/2/7/aaf06627_bd5d_4483_81a6_3d1f5c37ae94.png?sw=700&sh=700&sm=fit&q=100&strip=false">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
 </div>
 <!-- Product Card 8 -->
 <div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1" >
-<div class="absolute top-8 left-8">
-<span class="bg-on-surface text-surface text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Pre-Order</span>
-</div>
 <div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
 <img alt="White Soccer Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist white professional soccer boot with neon lime accents and futuristic textured upper on a clean grey background" src="https://www.prodirectsport.us/cdn/shop/files/1045689_main.jpg?v=1773998764"/>
 </div>
 <div class="flex flex-col flex-1">
 <div class="flex justify-between items-start mb-2">
 <h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">NIKE TIEMPO MAESTRO ELITE LE</h3>
-<span class="font-headline font-bold text-xl">$275/£240</span>
+<span class="font-headline font-bold text-xl">$275</span>
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Firm-Ground Low-Top Football Boot</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Pre-Order</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE TIEMPO MAESTRO ELITE LE"
+  data-price="275"
+  data-image="https://www.nike.com.kw/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwe558f12f/nk/aaf/0/6/6/2/7/aaf06627_bd5d_4483_81a6_3d1f5c37ae94.png?sw=700&sh=700&sm=fit&q=100&strip=false">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE TIEMPO MAESTRO ELITE LE"
+  data-price="275"
+  data-image="https://www.nike.com.kw/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwe558f12f/nk/aaf/0/6/6/2/7/aaf06627_bd5d_4483_81a6_3d1f5c37ae94.png?sw=700&sh=700&sm=fit&q=100&strip=false">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -351,9 +439,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Multi-Colour/Multi-Colour/Multi-Colour</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE PHANTOM 6 LOW ACADEMY BY YOU" 
+  data-price="130"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/43a19d01-51e6-4f26-ba1d-a38073533f00/PHANTOM+6+LOW+AC+FG%2FMG+NBY.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE PHANTOM 6 LOW ACADEMY BY YOU"
+  data-price="130"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/43a19d01-51e6-4f26-ba1d-a38073533f00/PHANTOM+6+LOW+AC+FG%2FMG+NBY.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -370,9 +468,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Black/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE PHANTOM 6 LOW ELITE SE" 
+  data-price="314"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d5f5edcf-5b3a-4055-89f8-06fa551fc689/PHANTOM+6+LOW+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE PHANTOM 6 LOW ELITE SE"
+  data-price="314"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d5f5edcf-5b3a-4055-89f8-06fa551fc689/PHANTOM+6+LOW+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -389,9 +497,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE ZOOM MERCURIAL SUPERFLY 9 ELITE 'MARCUS RASHFORD'" 
+  data-price="365"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0e18fea2-2156-4d75-8e2f-85a1d76e400e/ZOOM+SUPERFLY+9+ELITE+MR+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE ZOOM MERCURIAL SUPERFLY 9 ELITE 'MARCUS RASHFORD'"
+  data-price="365"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0e18fea2-2156-4d75-8e2f-85a1d76e400e/ZOOM+SUPERFLY+9+ELITE+MR+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -408,9 +526,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Firm-Ground Low-Top Football Boot</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE TIEMPO LIGERA PRO"
+  data-price="170"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/af1abc3d-0ec5-451e-936a-51959ba1aeed/TIEMPO+LIGERA+PRO+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE TIEMPO LIGERA PRO"
+  data-price="170"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/af1abc3d-0ec5-451e-936a-51959ba1aeed/TIEMPO+LIGERA+PRO+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -423,13 +551,23 @@
 <div class="flex flex-col flex-1">
 <div class="flex justify-between items-start mb-2">
 <h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">Nike Mercurial Vapor 16 Elite</h3>
-<span class="font-headline font-bold text-xl">$280 / €215</span>
+<span class="font-headline font-bold text-xl">$280</span>
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Lucid Red / Core Black / Cloud White</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE MERCURIAL VAPOR 16 ELITE"
+  data-price="280"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e8527e56-a895-4c6a-b672-87bef5d761b9/ZM+VAPOR+16+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE MERCURIAL VAPOR 16 ELITE"
+  data-price="280"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e8527e56-a895-4c6a-b672-87bef5d761b9/ZM+VAPOR+16+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -446,9 +584,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Firm-Ground Low-Top Football Boot</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">buy now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE TIEMPO MAESTRO"
+  data-price="278"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b00445eb-0352-4ade-9f19-b9d8709f9c3d/TIEMPO+MAESTRO+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE TIEMPO MAESTRO"
+  data-price="278"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b00445eb-0352-4ade-9f19-b9d8709f9c3d/TIEMPO+MAESTRO+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -465,9 +613,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Firm-Ground Football Boot</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE UNITED PHANTOM 6 LOW ELITE"
+  data-price="329"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/09cc1cd4-8e48-415d-ad99-1390f86a1c8e/PHANTOM+6+LOW+ELITE+FG+NU2.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE UNITED PHANTOM 6 LOW ELITE"
+  data-price="329"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/09cc1cd4-8e48-415d-ad99-1390f86a1c8e/PHANTOM+6+LOW+ELITE+FG+NU2.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -484,9 +642,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PMax Orange/Metallic Silver/Abyss</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE MERCURIAL SUPERFLY RGN SE"
+  data-price="324"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6f3ce830-f0d5-4e2e-850c-29b9ff3f3a49/MERCURIAL+SUPERFLY+RGN+FG+SE.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE MERCURIAL SUPERFLY RGN SE"
+  data-price="324"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6f3ce830-f0d5-4e2e-850c-29b9ff3f3a49/MERCURIAL+SUPERFLY+RGN+FG+SE.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -503,9 +671,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Racer Blue/Racer Blue/Multi-Colour</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE Phantom 6 Low Elite By You"
+  data-price="365"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/86061cd0-aadf-47cc-aef7-17d3e78200f4/PHANTOM+6+LOW+ELITE+FG+NBY.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE Phantom 6 Low Elite By You"
+  data-price="365"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto/86061cd0-aadf-47cc-aef7-17d3e78200f4/PHANTOM+6+LOW+ELITE+FG+NBY.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -522,9 +700,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Black/Deep Jungle/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="NIKE Mercurial Superfly 10 Elite"
+  data-price="332"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fbaf9da6-f5c2-41e3-aceb-8c2d851c5ae2/ZM+SUPERFLY+10+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="NIKE Mercurial Superfly 10 Elite"
+  data-price="332"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fbaf9da6-f5c2-41e3-aceb-8c2d851c5ae2/ZM+SUPERFLY+10+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -541,9 +729,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Silt Red/Racer Blue</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="Nike United Mercurial Vapor 16 Elite"
+  data-price="314"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/dc921c36-456b-47d3-9020-9c962b2677bf/ZM+VAPOR+16+ELITE+FG+NU2.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="Nike United Mercurial Vapor 16 Elite"
+  data-price="314"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/dc921c36-456b-47d3-9020-9c962b2677bf/ZM+VAPOR+16+ELITE+FG+NU2.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -560,9 +758,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Ember Glow/Aurora Green</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">buy now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="Nike Mercurial Vapor 16 Elite"
+  data-price="260"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4db5806a-eed2-4632-b4a4-60253027afe9/ZM+VAPOR+16+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="Nike Mercurial Vapor 16 Elite"
+  data-price="260"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4db5806a-eed2-4632-b4a4-60253027afe9/ZM+VAPOR+16+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -579,9 +787,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Glacier Blue/Blue Orbit</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="Nike Mercurial Vapor 16 Elite"
+  data-price="260"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3ddd3850-936a-490e-a645-f68df2f5d6c0/ZM+VAPOR+16+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="Nike Mercurial Vapor 16 Elite"
+  data-price="260"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3ddd3850-936a-490e-a645-f68df2f5d6c0/ZM+VAPOR+16+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -598,9 +816,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PVast Grey/Racer Blue</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="Nike United Tiempo Legend 10 Elite"
+  data-price="247"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/81fe18ab-446e-4868-b669-1ce5abfbcddf/LEGEND+10+ELITE+FG+NU2.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="Nike United Tiempo Legend 10 Elite"
+  data-price="247"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/81fe18ab-446e-4868-b669-1ce5abfbcddf/LEGEND+10+ELITE+FG+NU2.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -617,9 +845,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PMetallic Silver/Volt/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="Nike Tiempo Legend 10 Elite"
+  data-price="228"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/938afb36-8d63-4439-a7d5-ec9d4eb13e89/LEGEND+10+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="Nike Tiempo Legend 10 Elite"
+  data-price="228"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/938afb36-8d63-4439-a7d5-ec9d4eb13e89/LEGEND+10+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -636,9 +874,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Pink Foam/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="Nike Tiempo Legend 10 Elite"
+  data-price="228"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ce08d664-81ef-49d2-8b6e-14f653f766f5/LEGEND+10+ELITE+FG.png">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="Nike Tiempo Legend 10 Elite"
+  data-price="228"
+  data-image="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ce08d664-81ef-49d2-8b6e-14f653f766f5/LEGEND+10+ELITE+FG.png">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -692,5 +940,313 @@
 <p class="font-['Inter'] text-sm tracking-tight text-gray-500 uppercase font-bold">© 2024 F-Sport. ENGINEERED FOR THE PITCH.</p>
 </div>
 </footer>
+// favorite cart action sidebar
+<div id="fav-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Favorites</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="fav-count-label">0 Items</p>
+        </div>
+        <button id="close-fav" class="material-symbols-outlined cursor-pointer">close</button>
+    </div>
+
+    <div id="fav-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50">
+        <button id="clear-all-fav" class="w-full py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear Favorites</button>
+    </div>
+</div>
+// checkout cart action sidebar
+<div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Cart</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="item-count-label">0 Items</p>
+        </div>
+        <button id="close-cart" class="material-symbols-outlined hover:rotate-90 transition-transform duration-300 cursor-pointer">close</button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50 space-y-4">
+        <div class="flex justify-between items-center">
+            <span class="text-gray-500 uppercase text-xs font-bold">Subtotal</span>
+            <span id="cart-total" class="text-xl font-black">$0.00</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2">
+            <button id="clear-all-cart" class="py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear All</button>
+            <button class="py-3 text-[10px] font-bold uppercase bg-black text-white hover:bg-primary transition-colors">Checkout</button>
+        </div>
+    </div>
+</div>
+
+<div id="cart-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-[90] transition-opacity duration-300"></div>
 <script src="../src/auth.js"></script>
-</body></html>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const surfaceButtons = document.querySelectorAll('.flex.flex-wrap.gap-2 span');
+  const sizeButtons = document.querySelectorAll('.grid.grid-cols-4.gap-2 > div');
+  
+  // CHANGED: Target by ID instead of the color class
+  const clearButton = document.getElementById('clear-filters-btn');
+
+  // --- SURFACE LOGIC ---
+  surfaceButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      surfaceButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      });
+      button.classList.replace('bg-secondary-container', 'bg-primary');
+      button.classList.replace('text-on-secondary-container', 'text-on-primary');
+    });
+  });
+
+  // --- SIZE LOGIC ---
+  sizeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      sizeButtons.forEach(btn => {
+        btn.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+        btn.classList.add('border-outline-variant');
+      });
+      button.classList.remove('border-outline-variant');
+      button.classList.add('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+    });
+  });
+
+  // --- CLEAR FILTERS ACTION ---
+  if (clearButton) {
+    clearButton.addEventListener('click', () => {
+      // Reset Surfaces
+      surfaceButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      });
+
+      // Reset Sizes
+      sizeButtons.forEach(btn => {
+        btn.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+        btn.classList.add('border-outline-variant');
+      });
+    });
+  }
+});
+</script>
+<script>
+// We define these globally so the "onclick" in the HTML can find them
+let cart = JSON.parse(localStorage.getItem('fSportCart')) || [];
+
+// Function to delete a single item
+function deleteItem(index) {
+    cart.splice(index, 1);
+    // After removing, we need to refresh the UI
+    updateCart();
+}
+
+// We also need to make updateCart accessible
+function updateCart() {
+    const itemsContainer = document.getElementById('cart-items-container');
+    const totalDisplay = document.getElementById('cart-total');
+    const cartCountBadge = document.getElementById('cart-count');
+    const itemCountLabel = document.getElementById('item-count-label');
+
+    // Update the red badge on the bag icon
+    if (cartCountBadge) {
+        cartCountBadge.innerText = cart.length;
+        cart.length > 0 ? cartCountBadge.classList.remove('hidden') : cartCountBadge.classList.add('hidden');
+    }
+    
+    // Update the "X Items" label in the sidebar header
+    if (itemCountLabel) {
+        itemCountLabel.innerText = `${cart.length} Items`;
+    }
+
+    if (!itemsContainer) return;
+
+    itemsContainer.innerHTML = '';
+    let totalMoney = 0;
+
+    if (cart.length === 0) {
+        itemsContainer.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center opacity-30 mt-20">
+                <span class="material-symbols-outlined text-6xl">shopping_bag</span>
+                <p class="uppercase text-[10px] font-bold tracking-widest mt-2">Bag is empty</p>
+            </div>`;
+    } else {
+        cart.forEach((item, index) => {
+            totalMoney += parseFloat(item.price);
+            itemsContainer.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-100 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/80?text=No+Image'">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteItem(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 transition-colors cursor-pointer text-sm">
+                        delete
+                    </button>
+                </div>
+            `;
+        });
+    }
+
+    if (totalDisplay) {
+        totalDisplay.innerText = `$${totalMoney.toFixed(2)}`;
+    }
+    
+    // Save the changes to browser memory
+    localStorage.setItem('fSportCart', JSON.stringify(cart));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('cart-sidebar');
+    const overlay = document.getElementById('cart-overlay');
+    const cartIcon = document.getElementById('cart-icon');
+    const closeBtn = document.getElementById('close-cart');
+    const clearAllBtn = document.getElementById('clear-all-cart');
+    const buyButtons = document.querySelectorAll('.buy-now-btn');
+
+    // Buy Now logic
+    buyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image') 
+            };
+            cart.push(product);
+            updateCart();
+            
+            // Open sidebar automatically
+            sidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    // Clear All logic
+    if (clearAllBtn) {
+        clearAllBtn.addEventListener('click', () => {
+            cart = []; // Empty the array
+            updateCart(); // Refresh UI
+        });
+    }
+
+    // Toggle Sidebar
+    const toggleSidebar = () => {
+        sidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (cartIcon) cartIcon.addEventListener('click', toggleSidebar);
+    if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+    if (overlay) overlay.addEventListener('click', toggleSidebar);
+
+    // Run once on load to show existing items
+    updateCart();
+});
+</script>
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+</style>
+<script>
+// Global state for Favorites
+let favorites = JSON.parse(localStorage.getItem('fSportFavs')) || [];
+
+function deleteFav(index) {
+    favorites.splice(index, 1);
+    updateFavUI();
+}
+
+function updateFavUI() {
+    const container = document.getElementById('fav-items-container');
+    const countBadge = document.getElementById('fav-count');
+    const label = document.getElementById('fav-count-label');
+
+    if (countBadge) {
+        countBadge.innerText = favorites.length;
+        favorites.length > 0 ? countBadge.classList.remove('hidden') : countBadge.classList.add('hidden');
+    }
+    if (label) label.innerText = `${favorites.length} Items`;
+
+    if (!container) return;
+    container.innerHTML = '';
+
+    if (favorites.length === 0) {
+        container.innerHTML = `<div class="h-full flex flex-col items-center justify-center opacity-30 mt-20"><span class="material-symbols-outlined text-6xl">favorite</span><p class="uppercase text-[10px] font-bold mt-2">No favorites yet</p></div>`;
+    } else {
+        favorites.forEach((item, index) => {
+            container.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-50 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteFav(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 cursor-pointer text-sm">delete</button>
+                </div>`;
+        });
+    }
+    localStorage.setItem('fSportFavs', JSON.stringify(favorites));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const favIcon = document.getElementById('fav-icon');
+    const favSidebar = document.getElementById('fav-sidebar');
+    const closeFav = document.getElementById('close-fav');
+    const overlay = document.getElementById('cart-overlay'); // Reuse the same overlay
+    const favButtons = document.querySelectorAll('.fav-btn');
+    const clearFavBtn = document.getElementById('clear-all-fav');
+
+    favButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image')
+            };
+            
+            // Check if already in favorites to avoid duplicates
+            if (!favorites.some(item => item.name === product.name)) {
+                favorites.push(product);
+                updateFavUI();
+                
+                // Toggle heart color visually
+                btn.querySelector('span').classList.add('text-red-500');
+            }
+            
+            // Open Sidebar
+            favSidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    const toggleFav = () => {
+        favSidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (favIcon) favIcon.addEventListener('click', toggleFav);
+    if (closeFav) closeFav.addEventListener('click', toggleFav);
+    if (clearFavBtn) {
+        clearFavBtn.addEventListener('click', () => {
+            favorites = [];
+            updateFavUI();
+        });
+    }
+
+    updateFavUI();
+});
+</script>
+</body>
+</html>

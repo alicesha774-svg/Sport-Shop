@@ -108,7 +108,16 @@
 <span aria-hidden="true" class="material-symbols-outlined theme-toggle__icon" data-theme-icon></span>
 <span aria-hidden="true" class="theme-toggle__label" data-theme-label></span>
 </button>
-<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">shopping_bag</button>
+<button id="fav-icon" class="relative material-symbols-outlined text-on-surface hover:text-red-500 transition-colors cursor-pointer">
+    favorite
+    <span id="fav-count" class="absolute -top-1 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">0</span>
+  </button>
+<button id="cart-icon" class="relative material-symbols-outlined text-on-surface hover:text-primary transition-colors">
+  shopping_bag
+  <span id="cart-count" class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">
+    0
+  </span>
+</button>
 <a class="material-symbols-outlined text-on-surface hover:text-primary transition-colors" data-auth-icon="true" data-auth-link href="./login.html">person</a>
 </div>
 </nav>
@@ -159,7 +168,9 @@
 <div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">11</div>
 </div>
 </div>
-<button class="w-full bg-on-surface text-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-primary transition-colors duration-300">Clear All Filters</button>
+<button id="clear-filters-btn" class="w-full bg-on-surface text-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-primary transition-colors duration-300">
+  Clear All Filters
+</button>
 </aside>
 <!-- Product Content Area -->
 <section class="flex-1 bg-surface-container-low">
@@ -196,9 +207,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/White/White</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO MORELIA UL JAPAN 40TH"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwed51af5e/AW25/Footwear/SH_P1GA259999_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO MORELIA UL JAPAN 40TH"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwed51af5e/AW25/Footwear/SH_P1GA259999_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -218,9 +239,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">MORELIA 40th Red/White/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Pre-Order</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw2735a0b9/AW25/Footwear/SH_P1GA250160_00.png?sw=950&sh=950">
+  Pre-Order
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw2735a0b9/AW25/Footwear/SH_P1GA250160_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -237,9 +268,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">MORELIA NEO IV BETA JAPAN</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw7eaf63fa/AW25/Footwear/SH_P1GA254000_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw7eaf63fa/AW25/Footwear/SH_P1GA254000_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -256,9 +297,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Tanager Turquoise/Pink Tetra</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw87c5d3a1/AW25/Footwear/SH_P1GA254025_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw87c5d3a1/AW25/Footwear/SH_P1GA254025_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -275,9 +326,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Black/White/Chinese Red</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO MORELIA II PRO"
+  data-price="145"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw95b167c9/AW25/Footwear/SH_P1GA250601_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO MORELIA II PRO"
+  data-price="145"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw95b167c9/AW25/Footwear/SH_P1GA250601_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -294,9 +355,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Galaxy silver/8605 c/gold</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO ALPHA II JAPAN"
+  data-price="405"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwa2d75473/SS25/Football/SH_P1GA256004_00-1000x1000-1.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO ALPHA II JAPAN"
+  data-price="405"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwa2d75473/SS25/Football/SH_P1GA256004_00-1000x1000-1.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -313,9 +384,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/black iridescent/black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO ALPHA II JAPAN"
+  data-price="405"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw663cce56/AW25/Footwear/SH_P1GA256009_00.png-1000x1000-s_i-c_c_White-f_png.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO ALPHA II JAPAN"
+  data-price="405"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw663cce56/AW25/Footwear/SH_P1GA256009_00.png-1000x1000-s_i-c_c_White-f_png.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -332,9 +413,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Fuchsia Purple</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO Α III JAPAN"
+  data-price="395"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw516267fa/SS26/Footwear/SH_P1GA266064_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO Α III JAPAN"
+  data-price="395"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw516267fa/SS26/Footwear/SH_P1GA266064_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -351,14 +442,24 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Celeste/White</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO Α III JAPAN MIX"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw2cb73841/SS26/Footwear/SH_P1GC266025_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO Α III JAPAN MIX"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw2cb73841/SS26/Footwear/SH_P1GC266025_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
 </div>
-<!-- Product Card 0 -->
+<!-- Product Card 10 -->
 <div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
 <div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
 <img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw35e49b2d/SS26/Footwear/SH_P1GA266001_00.png?sw=950&sh=950"/>
@@ -370,9 +471,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Black/AcientWater</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MIZUNO Α III JAPAN"
+  data-price="395"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw35e49b2d/SS26/Footwear/SH_P1GA266001_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MIZUNO Α III JAPAN"
+  data-price="395"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw35e49b2d/SS26/Footwear/SH_P1GA266001_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -389,9 +500,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Football Gold/Galaxy Silver</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA II ELITE"
+  data-price="210"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwcf2623d4/SS26/Footwear/SH_P1GA260450_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA II ELITE"
+  data-price="210"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwcf2623d4/SS26/Footwear/SH_P1GA260450_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -408,9 +529,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Football Gold/Galaxy Silver</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwfbdd162a/SS26/Footwear/SH_P1GA260150_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwfbdd162a/SS26/Footwear/SH_P1GA260150_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -427,9 +558,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Obsidian</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA II JAPAN LTD"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw2f845cd4/SS25/Football/SH_P1GA255100_00.png-1000x1000-s_i-c_t_White-f_png.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA II JAPAN LTD"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw2f845cd4/SS25/Football/SH_P1GA255100_00.png-1000x1000-s_i-c_t_White-f_png.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -446,9 +587,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/laser blue/gold</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Pre-Order</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwb050adad/AW24/Football/SH_P1GA240125_00.png?sw=950&sh=950">
+  Pre-Order
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwb050adad/AW24/Football/SH_P1GA240125_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -465,9 +616,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">SafetyYllw/FeryCral2/GlxySlver</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA II JAPAN"
+  data-price="405"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw0f48c25c/SS24/Football/SH_P1GA240145_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA II JAPAN"
+  data-price="405"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw0f48c25c/SS24/Football/SH_P1GA240145_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -484,9 +645,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Galaxy silver/gold/8605 c</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA DNA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwdf5571d7/SS25/Football/P1GA251004_05.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA DNA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwdf5571d7/SS25/Football/P1GA251004_05.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -503,9 +674,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/FCoral2/Bolt2</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA II JAPAN"
+  data-price="385"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwb67883b5/AW23/Football/SH_P1GA230164_00_1000.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA II JAPAN"
+  data-price="385"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwb67883b5/AW23/Football/SH_P1GA230164_00_1000.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -522,9 +703,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Celeste/White/Ultramarine</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA NEO IV Β ELITE"
+  data-price="250"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw971219fa/SS26/Footwear/SH_P1GA264225_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA NEO IV Β ELITE"
+  data-price="250"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw971219fa/SS26/Footwear/SH_P1GA264225_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -541,9 +732,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Lightning Yellow/Black</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MONARCIDA NEO III SELECT"
+  data-price="88"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw1eda6235/SS26/Footwear/SH_P1GA262545_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MONARCIDA NEO III SELECT"
+  data-price="88"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw1eda6235/SS26/Footwear/SH_P1GA262545_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -563,9 +764,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Fuchsia Purple/Fuchsia Purple</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Pre-Order</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA NEO IV PRO"
+  data-price="150"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw703b5b41/SS26/Footwear/SH_P1GA263464_00.png?sw=950&sh=950">
+  Pre-Order
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA NEO IV PRO"
+  data-price="150"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw703b5b41/SS26/Footwear/SH_P1GA263464_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -582,9 +793,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/Pink Tetra/Fuchsia Purple</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA NEO IV Β ELITE MIX"
+  data-price="265"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwbb091746/SS26/Footwear/SH_P1GC264264_00.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA NEO IV Β ELITE MIX"
+  data-price="265"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwbb091746/SS26/Footwear/SH_P1GC264264_00.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -601,9 +822,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Galaxy silver/8605 c/cool gray 3c</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw5c28ed24/SS25/Football/SH_P1GA254004_00%20-1000x1000-1.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw5c28ed24/SS25/Football/SH_P1GA254004_00%20-1000x1000-1.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -620,9 +851,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/neon green/cool gray 3c</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw8ab3d825/SS25/Football/SH_P1GA254037_00%20-1000x1000-1.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA NEO IV BETA JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw8ab3d825/SS25/Football/SH_P1GA254037_00%20-1000x1000-1.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -639,9 +880,19 @@
 </div>
 <p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">White/neon green/galaxy silver</p>
 <div class="mt-auto flex gap-2">
-<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity">Buy Now</button>
-<button class="w-12 flex items-center justify-center border border-outline-variant hover:border-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwd1f2ca27/SS25/Football/SH_P1GA250137_00-1000x1000-3.png?sw=950&sh=950">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="MORELIA II JAPAN"
+  data-price="420"
+  data-image="https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dwd1f2ca27/SS25/Football/SH_P1GA250137_00-1000x1000-3.png?sw=950&sh=950">
+  <span class="material-symbols-outlined">favorite</span>
 </button>
 </div>
 </div>
@@ -694,5 +945,311 @@
 <p class="font-['Inter'] text-sm tracking-tight text-gray-500 uppercase font-bold">© 2024 F-Sport. ENGINEERED FOR THE PITCH.</p>
 </div>
 </footer>
+// favorite cart action sidebar
+<div id="fav-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Favorites</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="fav-count-label">0 Items</p>
+        </div>
+        <button id="close-fav" class="material-symbols-outlined cursor-pointer">close</button>
+    </div>
+
+    <div id="fav-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50">
+        <button id="clear-all-fav" class="w-full py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear Favorites</button>
+    </div>
+</div>
+// checkout cart action sidebar
+<div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Cart</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="item-count-label">0 Items</p>
+        </div>
+        <button id="close-cart" class="material-symbols-outlined hover:rotate-90 transition-transform duration-300 cursor-pointer">close</button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50 space-y-4">
+        <div class="flex justify-between items-center">
+            <span class="text-gray-500 uppercase text-xs font-bold">Subtotal</span>
+            <span id="cart-total" class="text-xl font-black">$0.00</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2">
+            <button id="clear-all-cart" class="py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear All</button>
+            <button class="py-3 text-[10px] font-bold uppercase bg-black text-white hover:bg-primary transition-colors">Checkout</button>
+        </div>
+    </div>
+</div>
 <script src="../src/auth.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const surfaceButtons = document.querySelectorAll('.flex.flex-wrap.gap-2 span');
+  const sizeButtons = document.querySelectorAll('.grid.grid-cols-4.gap-2 > div');
+  
+  // CHANGED: Target by ID instead of the color class
+  const clearButton = document.getElementById('clear-filters-btn');
+
+  // --- SURFACE LOGIC ---
+  surfaceButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      surfaceButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      });
+      button.classList.replace('bg-secondary-container', 'bg-primary');
+      button.classList.replace('text-on-secondary-container', 'text-on-primary');
+    });
+  });
+
+  // --- SIZE LOGIC ---
+  sizeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      sizeButtons.forEach(btn => {
+        btn.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+        btn.classList.add('border-outline-variant');
+      });
+      button.classList.remove('border-outline-variant');
+      button.classList.add('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+    });
+  });
+
+  // --- CLEAR FILTERS ACTION ---
+  if (clearButton) {
+    clearButton.addEventListener('click', () => {
+      // Reset Surfaces
+      surfaceButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      });
+
+      // Reset Sizes
+      sizeButtons.forEach(btn => {
+        btn.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+        btn.classList.add('border-outline-variant');
+      });
+    });
+  }
+});
+</script>
+<script>
+// We define these globally so the "onclick" in the HTML can find them
+let cart = JSON.parse(localStorage.getItem('fSportCart')) || [];
+
+// Function to delete a single item
+function deleteItem(index) {
+    cart.splice(index, 1);
+    // After removing, we need to refresh the UI
+    updateCart();
+}
+
+// We also need to make updateCart accessible
+function updateCart() {
+    const itemsContainer = document.getElementById('cart-items-container');
+    const totalDisplay = document.getElementById('cart-total');
+    const cartCountBadge = document.getElementById('cart-count');
+    const itemCountLabel = document.getElementById('item-count-label');
+
+    // Update the red badge on the bag icon
+    if (cartCountBadge) {
+        cartCountBadge.innerText = cart.length;
+        cart.length > 0 ? cartCountBadge.classList.remove('hidden') : cartCountBadge.classList.add('hidden');
+    }
+    
+    // Update the "X Items" label in the sidebar header
+    if (itemCountLabel) {
+        itemCountLabel.innerText = `${cart.length} Items`;
+    }
+
+    if (!itemsContainer) return;
+
+    itemsContainer.innerHTML = '';
+    let totalMoney = 0;
+
+    if (cart.length === 0) {
+        itemsContainer.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center opacity-30 mt-20">
+                <span class="material-symbols-outlined text-6xl">shopping_bag</span>
+                <p class="uppercase text-[10px] font-bold tracking-widest mt-2">Bag is empty</p>
+            </div>`;
+    } else {
+        cart.forEach((item, index) => {
+            totalMoney += parseFloat(item.price);
+            itemsContainer.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-100 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/80?text=No+Image'">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteItem(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 transition-colors cursor-pointer text-sm">
+                        delete
+                    </button>
+                </div>
+            `;
+        });
+    }
+
+    if (totalDisplay) {
+        totalDisplay.innerText = `$${totalMoney.toFixed(2)}`;
+    }
+    
+    // Save the changes to browser memory
+    localStorage.setItem('fSportCart', JSON.stringify(cart));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('cart-sidebar');
+    const overlay = document.getElementById('cart-overlay');
+    const cartIcon = document.getElementById('cart-icon');
+    const closeBtn = document.getElementById('close-cart');
+    const clearAllBtn = document.getElementById('clear-all-cart');
+    const buyButtons = document.querySelectorAll('.buy-now-btn');
+
+    // Buy Now logic
+    buyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image') 
+            };
+            cart.push(product);
+            updateCart();
+            
+            // Open sidebar automatically
+            sidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    // Clear All logic
+    if (clearAllBtn) {
+        clearAllBtn.addEventListener('click', () => {
+            cart = []; // Empty the array
+            updateCart(); // Refresh UI
+        });
+    }
+
+    // Toggle Sidebar
+    const toggleSidebar = () => {
+        sidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (cartIcon) cartIcon.addEventListener('click', toggleSidebar);
+    if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+    if (overlay) overlay.addEventListener('click', toggleSidebar);
+
+    // Run once on load to show existing items
+    updateCart();
+});
+</script>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+</style>
+<script>
+// Global state for Favorites
+let favorites = JSON.parse(localStorage.getItem('fSportFavs')) || [];
+
+function deleteFav(index) {
+    favorites.splice(index, 1);
+    updateFavUI();
+}
+
+function updateFavUI() {
+    const container = document.getElementById('fav-items-container');
+    const countBadge = document.getElementById('fav-count');
+    const label = document.getElementById('fav-count-label');
+
+    if (countBadge) {
+        countBadge.innerText = favorites.length;
+        favorites.length > 0 ? countBadge.classList.remove('hidden') : countBadge.classList.add('hidden');
+    }
+    if (label) label.innerText = `${favorites.length} Items`;
+
+    if (!container) return;
+    container.innerHTML = '';
+
+    if (favorites.length === 0) {
+        container.innerHTML = `<div class="h-full flex flex-col items-center justify-center opacity-30 mt-20"><span class="material-symbols-outlined text-6xl">favorite</span><p class="uppercase text-[10px] font-bold mt-2">No favorites yet</p></div>`;
+    } else {
+        favorites.forEach((item, index) => {
+            container.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-50 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteFav(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 cursor-pointer text-sm">delete</button>
+                </div>`;
+        });
+    }
+    localStorage.setItem('fSportFavs', JSON.stringify(favorites));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const favIcon = document.getElementById('fav-icon');
+    const favSidebar = document.getElementById('fav-sidebar');
+    const closeFav = document.getElementById('close-fav');
+    const overlay = document.getElementById('cart-overlay'); // Reuse the same overlay
+    const favButtons = document.querySelectorAll('.fav-btn');
+    const clearFavBtn = document.getElementById('clear-all-fav');
+
+    favButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image')
+            };
+            
+            // Check if already in favorites to avoid duplicates
+            if (!favorites.some(item => item.name === product.name)) {
+                favorites.push(product);
+                updateFavUI();
+                
+                // Toggle heart color visually
+                btn.querySelector('span').classList.add('text-red-500');
+            }
+            
+            // Open Sidebar
+            favSidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    const toggleFav = () => {
+        favSidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (favIcon) favIcon.addEventListener('click', toggleFav);
+    if (closeFav) closeFav.addEventListener('click', toggleFav);
+    if (clearFavBtn) {
+        clearFavBtn.addEventListener('click', () => {
+            favorites = [];
+            updateFavUI();
+        });
+    }
+
+    updateFavUI();
+});
+</script>
 </body></html>
