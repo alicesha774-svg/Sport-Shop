@@ -296,3 +296,4 @@ document.addEventListener("DOMContentLoaded", () => {
   wireLoginPage();
   hydrateMenuPage();
 });
+

@@ -93,11 +93,11 @@
 <div class="flex items-center gap-12">
 <a class="text-2xl font-black italic text-black font-headline tracking-tighter" href="./homepage.html">F-Sport</a>
 <div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./homepage.html">HOME</a>
 <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./boots.html">BOOTS</a>
 <a class="font-headline font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1" href="./cloth.html">CLOTH</a>
-<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./contact.html">CONTACT</a>
 <a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./menu.html">MENU</a>
-<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./homepage.html">HOME</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-black hover:text-[#ED1C24] transition-colors duration-200" href="./contact.html">CONTACT</a>
 </div>
 </div>
 <div class="flex items-center gap-6">
@@ -107,41 +107,46 @@
 </button>
 <a class="material-symbols-outlined text-black hover:text-[#ED1C24] transition-all" data-auth-icon="true" data-auth-link href="./login.html">person</a>
 <div class="relative group cursor-pointer">
-<span class="material-symbols-outlined text-black group-hover:text-[#ED1C24] transition-all">shopping_bag</span>
-<span class="absolute -top-1 -right-1 bg-primary text-[10px] text-white w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+<button id="cart-icon" class="relative material-symbols-outlined text-on-surface hover:text-primary transition-colors">
+  shopping_bag
+  <span id="cart-count" class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">
+    0
+  </span>
+</button>
 </div>
 </div>
 </nav>
 <main class="pt-20">
 <!-- HERO SECTION: THE UNITED PACK -->
-<section class="relative h-[921px] w-full overflow-hidden flex items-center px-12 lg:px-24">
+<section class="relative h-[800px] w-full overflow-hidden flex items-center px-12 lg:px-24">
 <div class="absolute inset-0 z-0">
-<img alt="" class="w-full h-full object-cover grayscale contrast-125" data-alt="close-up action shot of modern crimson and gold football boots striking a ball on a foggy stadium pitch at night with intense stadium lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAncQFZKaOGUZ-uNp5b2s9U1OdqpaATFT33vK8AGbDrXi_tynUDYh5JgJUrLWDubPuo3ZHNUymxWLQYcQd_ViNvmWWX1Cnhee9R2icjpXGHKQwJOsNQYjuMYqprZ4nOxzcILJvCG3yvJcD4tpSwSvZsi0Vnd2RjUZzc3FtWW7KjEeBzzWjMfAWwDdBoxFfQuQlSUACY33KvsKSUS1TWig6a2eQVWePwLz27KS08CTRFJK_F5mSMxOnQiSUOrAFHWqKmg6IhHaNCTQ"/>
+<img alt="" class="w-full h-full object-cover grayscale contrast-125" data-alt="close-up action shot of modern crimson and gold football boots striking a ball on a foggy stadium pitch at night with intense stadium lights" src="https://cpl.sgp1.cdn.digitaloceanspaces.com/photo_gellaries/36/1766371131_4.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
 </div>
 <div class="relative z-10 max-w-3xl">
-<span class="font-label text-primary-container font-bold tracking-widest uppercase mb-4 block">LIMITED EDITION RELEASE</span>
+<span class="font-label text-primary-container font-bold tracking-widest uppercase mb-4 block">CAMBODIA FOOTBALL</span>
 <h1 class="text-7xl lg:text-9xl font-headline font-black text-white leading-[0.85] tracking-tighter uppercase mb-8">
-                    UNITED<br/>PACK
+                    CAMBODIA<br/>COLLECTION
                 </h1>
 <p class="text-white/80 text-xl font-body max-w-xl mb-10 leading-relaxed">
-                    Engineered for the absolute elite. Experience the fusion of kinetic energy and structural precision in our most aggressive silhouette yet.
+                    Engineered for the absolute elite. Experience the fusion of F-sport energy and structural precision in our most aggressive silhouette yet.
                 </p>
-<div class="flex gap-4">
-<a class="inline-flex px-10 py-5 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-black uppercase text-lg rounded-sm hover:scale-105 transition-transform" href="./boots.html">
-                        SHOP COLLECTION
-                    </a>
-</div>
 </div>
 </section>
 <!-- BRAND SCROLLER (STATIC GRID) -->
 <section class="py-12 bg-surface-container-low border-y border-outline-variant/10">
 <div class="max-w-7xl mx-auto px-12 flex flex-wrap justify-between items-center opacity-60 hover:opacity-100 transition-opacity gap-8">
-<a aria-label="Open Nike collection" href="./nike.html"><img alt="Nike" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white nike swoosh logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtTJoYtijW21LzGjTpl8gQdWd8wJLyN1xAevBnpbhozarpCfrvxIPfc4CBz6_eLIMaMjJwZlI4BXBzC_4P9EhaqjK7ECPv_OEgAWktM_U2-wXFT-m4epvd2Uyv0hnjrafAA77dRdYJ1q1JxofNN4jkMhYb_DxPHMN7r7eej1zLTBHDLj8fcDv44PaVyhkP3SlMjjfud594XRhVqpldsGk0NNFN7qr2OFmQtitF2olnzAWHOTKEajjrFR_RsLBlf3huVPsKK0LsuQ"/></a>
-<a aria-label="Open Adidas collection" href="./adidas.html"><img alt="Adidas" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white adidas three stripes logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxObpY4CrNahuQ0aPRPE7S2EznUdTrDsYFbqp_bNsKBrVKuoanwNL9fEFZ4eIa6O4sEMzCQJ5r_XmG3cYRpudNlMQg5UqzPhgLaPmg2W-f44Dh6aCoMJakNvStiGES5HgavqIRtAiotFHfF9yqZurBVAAlWLvgkTXgbrq6qfe5nNTlOfzC363IJ8SDr0iWBpmgI0RtRiIlNIWH9Zaotd-dwWbR1hQJnNRf7yhd7nPrYRhNdkExroiF9j8KDQfMjGvS5vwZjPz0cw"/></a>
-<a aria-label="Open Puma collection" href="./puma.html"><img alt="Puma" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white jumping puma logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmspVCwdi7k8ACIr45e-3-L5P-knNriT3KIh1DHefsXynBQDHo03cJ3NEmyrUC--Mzh1qNIEfmqYJU4MLufbyDf96W7iuOd89TPkU6JVD6Wx0-r57gSMjRNy5tiWTFRR-uf54yl6gws67vZBSFACuoSQNXhGxCHNdWY4sYBIBCiiKpI2O_I03gYn7PY12auirIw0S5u7K7VAYw4e0_04BSw5qkCBp8cpnJh7ZNUEvQaENIO5f-ydZixewqWxR5Xl9V5HsAZnNjIw"/></a>
-<a aria-label="Open Mizuno collection" href="./mizuno.html"><img alt="Mizuno" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white mizuno logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSqj2VfXTdN1-d_I8Cmv4Ln3EtUXMwZA4GHOBzxEOb-FHpq2W6i6-2yP-H0-v_M1Js1FhZBeEO7nqh5UbPZL1l6y6-QbCQ-fnPC1ISdqaQiq5QPMoD-Hh8Iv8E24Ufz_nlt_hOrNLOFaxQQFdO6IBcpyNZ1SPlGhOfSasH5xAb7fIVwkm3YxJ6luJmQgA0SzTsRwoRkpO16qhzU78q1UbTyUr50gjjfq6nBDzjdof2NeQd-Ff5Ip1-_JwEuQOrM5hxgsLCrGAKLA"/></a>
-<img alt="New Balance" class="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist white new balance nb logo on a dark gray transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcm8pHl9dl5S5GwAsVZZkiPjlsLlS_KZdNcSCeMDRWwRwaAuK9jivMRsYYunZYgv8CUvHqyWch2T0Mjdp8-LkkQiIjt3EWtsOuEBaBNMrd3ej8vJBCL2zz1fNZ_wiglQi3TVkwf0B76Sm5qvAyGd79bivqyy6zLOXRlf-3OuRvS471nwuqau3-UPxxSWkvnmZrkDLuCmYw-p08lZU3lF5WLfaZsZVBBx7yHG_PV7Lk3HdsDnQV4NuBZFYToOluL_8vroaD6Qr-AQ"/>
+<img alt="VISAKHA PRIDE OF CAMBODIA FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white nike swoosh logo on a dark gray transparent background" src="https://upload.wikimedia.org/wikipedia/en/4/40/Visakha_2021.png"/>
+<img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Kirivong_Sok_Sen_Chey_FC_Crest.png" alt="KIRIVONG SOK SENCHEY FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white nike swoosh logo on a dark gray transparent background"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Life_FC.png" alt="LIFE FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white adidas three stripes logo on a dark gray transparent background"/>
+<img src="https://angkor-tiger.com/wp-content/themes/angkortiger/img/logo.png" alt="ANGKOR TIGER FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white adidas three stripes logo on a dark gray transparent background"/>
+<img alt="PHNOM PENH CROWN FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white adidas three stripes logo on a dark gray transparent background" src="https://upload.wikimedia.org/wikipedia/en/0/0b/Phnom_Penh_Crown_FC_Logo.png"/>
+<img alt="CAMBODIA FOOTBALL FEDERATION" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white jumping puma logo on a dark gray transparent background" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Football_Federation_of_Cambodia_logo.svg/250px-Football_Federation_of_Cambodia_logo.svg.png"/>
+<img alt="PREAH KHAN REACH SVAY RIENG FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white mizuno logo on a dark gray transparent background" src="https://upload.wikimedia.org/wikipedia/en/a/ab/Svay_Rieng_FC_logo.png"/>
+<img src="https://cpl.sgp1.cdn.digitaloceanspaces.com/logo/club/medium/1750926116.png" alt="MOI KAMPONG DEWA FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white mizuno logo on a dark gray transparent background"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/42/ISI_Dangkor_senchey_FC.png" alt="ISI DANGKOR SENCHEY FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white mizuno logo on a dark gray transparent background"/>
+<img src="https://upload.wikimedia.org/wikipedia/en/d/df/Nagaworld_FC_logo.png" alt="NAGAWORLD FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white mizuno logo on a dark gray transparent background"/>
+<img alt="BOEUNG KET ANGKOR FOOTBALL CLUB" class="h-8 md:h-12 object-contain transition-all cursor-pointer" data-alt="minimalist white new balance nb logo on a dark gray transparent background" src="https://upload.wikimedia.org/wikipedia/en/5/55/Boeung_Ket_Angkor.png"/>
 </div>
 </section>
 <!-- NEW ARRIVALS GRID -->
@@ -151,22 +156,21 @@
 <div>
 
 </div>
-<a class="group flex items-center gap-2 font-headline font-bold text-lg hover:text-primary transition-colors" href="./boots.html">
-                        VIEW ALL <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
 <!-- Product Card 1 -->
 <div class="bg-surface-container-lowest p-8 flex flex-col group relative">
 <div class="relative h-64 mb-8 overflow-hidden">
-<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="side view of a premium red and chrome football boot with intricate grip textures on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsWZ2uxwZbiU9OLxNhpPJfJ239hikTCljbZ-kmwOZgpjF9Xm-ccumqmI2InvlZF_2I3Q7jkk53RAvQJdb_8iA5NXq8ZqfY6Y7HzGnZyEwHtfyXBs3Areo_84XZE5gZp630Svk8k99fQIaLTcewQAcTinVpXQVZp0Qg3V80yWk1WLMFtT44VbMEni7DcfJtyfQgBLtOBOFFxkUYoMwNDCZczy-ycCySJjOVmW-PZXZtylUZLGRxhX-Zf1WmR5Kp4ylj1AuN4wJ6ng"/>
-<span class="absolute top-0 right-0 font-label text-[10px] tracking-widest bg-black text-white px-2 py-1">PRE-ORDER</span>
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="side view of a premium red and chrome football boot with intricate grip textures on a clean white background" src="https://gateway.stadiumx.asia/file-1763460725166-149272682.jpg"/>
 </div>
 <div class="mt-auto">
-<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">KINETIC SERIES</p>
-<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">PULSE ELITE FG</h3>
-<p class="font-headline text-primary font-bold text-lg mb-6">$275.00</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2026</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">PHNOM PENH CROWN</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$22</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="PHNOM PENH CROWN OFFICIAL JERSEY 2026"
+data-price="22"
+data-image="https://gateway.stadiumx.asia/file-1763460725166-149272682.jpg">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -174,13 +178,16 @@
 <!-- Product Card 2 -->
 <div class="bg-surface-container-lowest p-8 flex flex-col group relative">
 <div class="relative h-64 mb-8 overflow-hidden">
-<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="oblique view of a sleek black football boot with neon yellow accents and carbon fiber soleplate on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1qxqVfPeyXoM0GfGwJ5ScQr-aX6-cehY5EpCFiGCGqRUAdlP9Gn2QWrrIIkMuILTirX6NMY-rt3NF9IbtQzQ0LWvNEeIQvBT4iQKJLq7esAXOMzUfKwf-hnzMuc4rL6IPJiVQt8H2K1XGALf083m2ml6qRzyQogfDq6WMrY00dn12fhTv6b6B51k8CvQ8v7Nm6BqBXdM07PhvW4uujiZX55WfERqu6MVm0rzqXnDii08Kh3WuRzqaS3yUyWNhL2p-lO2pg5m2cQ"/>
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="oblique view of a sleek black football boot with neon yellow accents and carbon fiber soleplate on a clean white background" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDut94ktHEve07DWx2dhbHwNczHytrnslInA&s"/>
 </div>
 <div class="mt-auto">
-<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">SPEED ARCHIVE</p>
-<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">VORTEX 1.0</h3>
-<p class="font-headline text-primary font-bold text-lg mb-6">$240.00</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2025</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">PREAH KHAN REACH SVAY RIENG</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$20</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="PREAH KHAN REACH SVAY RIENG OFFICIAL JERSEY 2025"
+data-price="20"
+data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDut94ktHEve07DWx2dhbHwNczHytrnslInA&s">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -188,13 +195,16 @@
 <!-- Product Card 3 -->
 <div class="bg-surface-container-lowest p-8 flex flex-col group relative">
 <div class="relative h-64 mb-8 overflow-hidden">
-<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="top-down view of an electric blue football boot featuring off-center lacing system and textured strike zone on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCakbp1DtIkBsWZNPXPNvJjhXPYqKTllxFWOWViFOg_jZrxpqHs4kLzP9b8b3qR15K4NV4Nr6b5AVtjiryV92QUqXs8S_bFW4qOAhDhC1n_TTWzjTzD1QeX_aXIcZieGEWW9Tq7J5Oqc9wlHvzVeE3Y0rFgK3Mn7sNqUiJmVr6nntPjMn_k_c_Haj-G__54Ro8JwZJK9b0BJ__-UHiKAP5oNPLrkfYbRtwCuVk0Tp-QrFq8M3lNykCio3OcmSqh3CcY_cZ9xZqD7A"/>
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="top-down view of an electric blue football boot featuring off-center lacing system and textured strike zone on a white background" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qbhY1LBJt1lpKB9emueg6ojoDGOW3qRehQ&s"/>
 </div>
 <div class="mt-auto">
-<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">CONTROL CORE</p>
-<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">MAESTRO SG</h3>
-<p class="font-headline text-primary font-bold text-lg mb-6">$220.00</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2022</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">BOEUNG KET FC</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$22</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="BOEUNG KET FC OFFICIAL JERSEY 2022"
+data-price="22"
+data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qbhY1LBJt1lpKB9emueg6ojoDGOW3qRehQ&s">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -202,13 +212,16 @@
 <!-- Product Card 4 -->
 <div class="bg-surface-container-lowest p-8 flex flex-col group relative">
 <div class="relative h-64 mb-8 overflow-hidden">
-<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="professional photo of a crisp white football boot with silver iridescent details and clear studs on a white studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB00PWhjHMWRmzbxcvjImBdKY7ovqfzMezPjMJnMF7DPqtuursMlNwtXC3H2vykFp2vW-CsuLxzkDH-YvVr6zNQrs3-T8j4UzxAZdp67NYRI7TeyLmO7E3zKrPr3seY-REyTkVrEIRPQ_FudjKUTq5ymL8OJaOVbOimP2jyJgYvPgPRL8-zjBuJIKkMSGrhp2RCpFjOHe8aqK8hLNJ9wTUodmVzKB4N_sMH8Bvfl5OcAO75mQIX9PN2D2RemjELhk4qp5qnnU4CYQ"/>
+<img alt="Elite Boot" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" data-alt="professional photo of a crisp white football boot with silver iridescent details and clear studs on a white studio background" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKdWwXdkwzbwWA-C7qx2tDxzxdiqX8y67Xsw&s"/>
 </div>
 <div class="mt-auto">
-<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">HERITAGE LAB</p>
-<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">CLASSICO PRO</h3>
-<p class="font-headline text-primary font-bold text-lg mb-6">$180.00</p>
-<button class="w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+<p class="font-label text-xs text-secondary/60 mb-2 uppercase tracking-widest">OFFICIAL JERSEY 2025</p>
+<h3 class="font-headline font-extrabold text-xl mb-1 uppercase">VISAKHA FC</h3>
+<p class="font-headline text-primary font-bold text-lg mb-6">$25</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="VISAKHA FC OFFICIAL JERSEY 2025"
+data-price="25"
+data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKdWwXdkwzbwWA-C7qx2tDxzxdiqX8y67Xsw&s">
                                 BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
 </button>
 </div>
@@ -217,21 +230,14 @@
 </div>
 </section>
 <!-- ELITE EQUIPMENT PROMO -->
-<section class="relative h-[614px] flex items-center overflow-hidden">
+<section class="relative h-[750px] flex items-center overflow-hidden">
 <div class="absolute inset-0 bg-surface-container-high">
-<img alt="Elite Equipment" class="w-full h-full object-cover mix-blend-multiply opacity-50" data-alt="close-up of professional football training equipment including agility cones, hurdles, and a high-tech match ball on green turf with high contrast shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYpKYUMVVpwC-z8VKkY4l7cDWteoLN3PtRgfDg8FNMPQLqKX8nYV2Fua8o0aOHFCE6A9535xQ86d2asVlfA4sZlHTCpOa2QlxlXtprqf3d9S0zEfK93jSK5ZHAH1Q-DEuAffmI22TCmM0TcutAtNCj_sK3G-hEGbMHWo5_W0ZRqfkAtbSPPNc2BvVOCmM-wyor1hTBz_Cv107Dwo8sUaE_Uk6dBK3FTWii9MnhNxghvFyTwE6UEeTNOLynwsjHThZpzoDRR_XXcg"/>
+<img alt="Elite Equipment" class="w-full h-full object-cover mix-blend-multiply opacity-100" data-alt="close-up of professional football training equipment including agility cones, hurdles, and a high-tech match ball on green turf with high contrast shadows" src="https://cdn.kiripost.com/static/images/345288268_228093833170038_86165764.2e16d0ba.fill-960x540.jpg"/>
 </div>
 <div class="max-w-7xl mx-auto w-full px-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
 <div class="max-w-xl">
-<h2 class="text-6xl font-headline font-black text-black tracking-tighter uppercase leading-none mb-6">ELITE LEVEL<br/>EQUIPMENT</h2>
-<p class="text-on-surface-variant font-body text-lg mb-8">Professional grade training gear, recovery tools, and ball technology designed to shave seconds off your sprint and add power to your strike.</p>
-<a class="inline-flex px-12 py-5 bg-black text-white font-headline font-black uppercase text-sm tracking-widest hover:bg-primary transition-all" href="./boots.html">
-                        EXPLORE GEAR
-                    </a>
-</div>
-<div class="hidden lg:block w-96 h-96 relative">
-<div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl"></div>
-<img alt="Match Ball" class="w-full h-full object-contain relative z-10" data-alt="ultra-modern geometric match football with black and neon red panels floating in mid-air with realistic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF7GFjUGOAuHtU34KYLLyibcNZt9RW8pWPVlTuWpUFpB_6eLYVRfON40pUtewrvKsI_5PDgq5lZPbisrluPD4vEtzZg3asWCtUQA7yqoM5V8UrUZf1ulPg5CS3qqZS4WJvw9KertRaPcJjZ7IWSzF6A7dZQzDf0tFLnSbBV5HDkdMUvWA0AcqceLXmrQ0gvcikzx-ynRw-iGvVUp0uUCpzg8ypCSThtHC06r9CNItIlB-x17YnCGU0XQiiskg3hIZd8RjCRWfmFg"/>
+<h2 class="text-6xl font-headline font-black text-black tracking-tighter uppercase leading-none mb-6">ELITE<br/>EQUIPMENT</h2>
+<p class="text-white font-body text-lg mb-8">Professional grade training gear, recovery tools, and ball technology designed to shave seconds off your sprint and add power to your strike.</p>
 </div>
 </div>
 </section>
@@ -243,43 +249,73 @@
 <div class="flex gap-6 kinetic-scroll overflow-x-auto px-12 pb-12 cursor-grab active:cursor-grabbing">
 <!-- Carousel Card 1 -->
 <div class="flex-none w-80 bg-surface-container-lowest p-6 border-l-4 border-primary">
-<img alt="Gloves" class="w-full h-48 object-contain mb-6" data-alt="pair of professional goalkeeper gloves in black and neon orange with high-grip latex palms on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLeQQL-REm_FQrNJAQLy9Syl9akhAktJqyaMMMOt7qwOPg_oRMczsWR0iqOKS_w7oZtc97Eu1ur9TC9W8QWQCfwUC6VayydBcfaMQRYIq_u09JlEPIGgGK4URgYKZMLqICVRlbU4T4R1CtY2YQQyhtci4e3ept0MIGs0_x88nRByYLIpLdWpX7xTfpkbkF7E39o3eW0n1DJAh6AUvx7wvV4qVjsPayF_QHRCdg3JuiyEYRa0jh8yLS-xRhzq4P9DoFpAiMX6mJ6A"/>
-<p class="font-label text-[10px] text-primary font-bold uppercase mb-1">MOST POPULAR</p>
-<h4 class="font-headline font-black text-lg uppercase mb-2">SHIELD PRO G1</h4>
-<p class="font-body text-sm text-secondary mb-4">Elite level grip and wrist support.</p>
-<p class="font-headline font-bold">$110.00</p>
+<img alt="Gloves" class="w-full h-48 object-contain mb-6" data-alt="pair of professional goalkeeper gloves in black and neon orange with high-grip latex palms on a white background" src="https://www.footballshirtculture.com/images/cwgallery/3332-cambodia-24-25-varaman-away-kit/thumb_3332_cambodia_24_25_varaman_away_kit_a.jpg"/>
+<p class="font-label text-[10px] text-primary font-bold uppercase mb-1">PLAYER VERSION / MOST POPULAR</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL AWAY JERSE 25-26</h4>
+<p class="font-body text-sm text-secondary mb-4">soft and more comfortable</p>
+<p class="font-headline font-bold">$49.99</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL AWAY JERSEY 25-26"
+data-price="49.99"
+data-image="https://www.footballshirtculture.com/images/cwgallery/3332-cambodia-24-25-varaman-away-kit/thumb_3332_cambodia_24_25_varaman_away_kit_a.jpg">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 2 -->
-<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
-<img alt="Match Ball" class="w-full h-48 object-contain mb-6" data-alt="professional match football with metallic silver finish and embossed texture on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHoUTO2WL-nEIxcQbCD8tLsFOYyFzRdvZcbc2zdUwGm1dYXfzKCAasZ__cVct_ikQQD4NPRPxcTkOUNTSaq1WUSxkWXYDfO9UfwHtrcOyQhDpze-WodhRhz8k7dArBmQedhAjJ1jcmwnzPA1gffh7Jw5myJDeiIW9QxxEyZDG5AO8W53E8nOfaL1xOt2Ca8Sfz1O0yRB1hDvgw4nxG92cNF5ru3gojBBEFzWhvbijMl_sV503j1piFOhKGRXfLFs6zKijePuvGmg"/>
-<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">TRAINING ESSENTIAL</p>
-<h4 class="font-headline font-black text-lg uppercase mb-2">STRIKE BALL V5</h4>
-<p class="font-body text-sm text-secondary mb-4">Aerodynamic precision for training.</p>
+<div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
+<img alt="Match Ball" class="w-full h-48 object-contain mb-6" data-alt="professional match football with metallic silver finish and embossed texture on a clean white background" src="https://www.weston.com.sg/cdn/shop/files/463086060_538289552232977_1680240891361027503_n_1024x1024.jpg?v=1733467018"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">PLAYER VERSION</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL THIRD JERSEY 25-26</h4>
+<p class="font-body text-sm text-secondary mb-4">soft and more comfortable</p>
 <p class="font-headline font-bold">$45.00</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL THIRD JERSEY 25-26"
+data-price="45.00"
+data-image="https://www.weston.com.sg/cdn/shop/files/463086060_538289552232977_1680240891361027503_n_1024x1024.jpg?v=1733467018">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 3 -->
-<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
-<img alt="Jersey" class="w-full h-48 object-contain mb-6" data-alt="high-performance compression training jersey in deep red with laser-cut ventilation holes on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgr8B7qqBHSTgCOuu5GNZj-C_lRUcATS1QHcNGb_DcTD3WPxuo6zWH3BJw3HrgkXXhLSDOSFlK2EjIwsrjK2TWczk2aKLe3iE8sjntm_ktAjoPrxGIJbHG6Jx3r6PUtlp69QU7dd38Za2drJ0E652JENHabZfjNPKw3BU9XrVMAyx5V5jCDs_pssdRAkIB37Eas5jXOEGDyAK3EwsKKv2clP-894nBWKHWry7jf9uBVbxwoi_z5HPdhwidwiMhS5R9li9qu00H-g"/>
-<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">BEST FOR PERFORMANCE</p>
-<h4 class="font-headline font-black text-lg uppercase mb-2">AERO-KNIT TOP</h4>
-<p class="font-body text-sm text-secondary mb-4">Moisture-wicking athletic fit.</p>
-<p class="font-headline font-bold">$85.00</p>
+<div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
+<img alt="Jersey" class="w-full h-48 object-contain mb-6" data-alt="high-performance compression training jersey in deep red with laser-cut ventilation holes on a white background" src="https://gateway.stadiumx.asia/file-1741951680615-549271809.JPG"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">PLAYER VERSION</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL FOURTH JERSEY 25-26</h4>
+<p class="font-body text-sm text-secondary mb-4">soft and more comfortable fit</p>
+<p class="font-headline font-bold">$48.00</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL FOURTH JERSEY 25-26"
+data-price="48.00"
+data-image="https://gateway.stadiumx.asia/file-1741951680615-549271809.JPG">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 4 -->
-<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
-<img alt="Socks" class="w-full h-48 object-contain mb-6" data-alt="professional football grip socks in white with non-slip silicone pads on the sole on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH4fjsDIXmqvVJnQorH4Hkx8FW8SMdO0crGY74GNstOimjshwi4YPj1JfpTKUVZ_xckiIYYg7rvhGYRL7mny80UUhRQWh7mzErFWRSKa9vPOgWzdJPbonHl4sqbvHZ01nSr8L8nnYI5bjLRxx6jMWxqdKiYDxNd1dnGfqGby849ZfwjB41SeOT10VHuXlbf1xx69jjs6pATfrfukpw3LFjeLl2lbK84vE30k49CQ5YSYeaV1EgkA8u65et-5Gqow9KH3rHT7wFiw"/>
-<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">PLAYERS CHOICE</p>
-<h4 class="font-headline font-black text-lg uppercase mb-2">GRIP-TEC SOCKS</h4>
-<p class="font-body text-sm text-secondary mb-4">Lock your foot inside the boot.</p>
-<p class="font-headline font-bold">$25.00</p>
+<div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
+<img alt="Socks" class="w-full h-48 object-contain mb-6" data-alt="professional football grip socks in white with non-slip silicone pads on the sole on a white background" src="https://www.footballshirtculture.com/images/cwgallery/3325-cambodia-24-25-varaman-home-kit/3325_cambodia_24_25_varaman_home_kit_a.jpg"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">PLAYERS VERSION</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL HOME JERSEY 25-26</h4>
+<p class="font-body text-sm text-secondary mb-4">soft / comfortable fit</p>
+<p class="font-headline font-bold">$49.99</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL HOME JERSEY 25-26"
+data-price="49.99"
+data-image="https://www.footballshirtculture.com/images/cwgallery/3325-cambodia-24-25-varaman-home-kit/3325_cambodia_24_25_varaman_home_kit_a.jpg">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 <!-- Carousel Card 5 -->
-<div class="flex-none w-80 bg-surface-container-lowest p-6 grayscale hover:grayscale-0 transition-all">
-<img alt="Turf Boot" class="w-full h-48 object-contain mb-6" data-alt="low profile turf football shoes in metallic gold with rubber lug outsole on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPgGqMN1s6JXD3c4tV2uCVjAd-8T4-RXFFdGdYGnY5OidduIabHabVKGlTAqHr5TZVOBSA3JrUExqWCAQNzdiEJ8eDNR3sXxMg4VyMjOSpp3iNvDd7wY3mlMrwvBRtNDFFye8xaHnswkA0E6tlG1JZY39c7zNNBxTyfKLKTVqUDV_Ts6RO8TsODdEyRkJjbeIuciHC1IRx8su9owSCSxB2DA8snWegVZgX5y4FhqUM6OQiVNkpNMqWRQ3I7KEAEalPwfbNugtZSw"/>
-<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">STREET KINGS</p>
-<h4 class="font-headline font-black text-lg uppercase mb-2">STREET ELITE TF</h4>
-<p class="font-body text-sm text-secondary mb-4">Supreme touch on synthetic turf.</p>
-<p class="font-headline font-bold">$130.00</p>
+<div class="flex-none w-80 bg-surface-container-lowest p-6 transition-all">
+<img alt="Turf Boot" class="w-full h-48 object-contain mb-6" data-alt="low profile turf football shoes in metallic gold with rubber lug outsole on a white background" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6vkDMdPvucNFlxO0swMLrKOCtocdlnoTitzFFWHdytoF7FM4hR0SzTorEFbO3uutOOgNZhyW_cKIfxE30AvqpohglgZYk1G-2fLo7iJz9cNNDwvOBwOJzPCr3oCXhg9TJWrEXrqJnV_RwAgsmCauJz0E_veVq3PaYBFghaMF-AtYmPcHng1xHddzyBw/s1600/cambodia-22-23-home-away-kits-5.jpg"/>
+<p class="font-label text-[10px] text-secondary font-bold uppercase mb-1">PLAYER VERSION</p>
+<h4 class="font-headline font-black text-lg uppercase mb-2">CAMBODIA OFFICIAL HOME JERSEY 24-25</h4>
+<p class="font-body text-sm text-secondary mb-4">cool and easy to wear</p>
+<p class="font-headline font-bold">$30.00</p>
+<button class="buy-now-btn w-full py-4 bg-surface-container-highest font-headline font-black uppercase text-sm tracking-tighter hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2"
+data-name="CAMBODIA OFFICIAL HOME JERSEY 24-25"
+data-price="30"
+data-image="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6vkDMdPvucNFlxO0swMLrKOCtocdlnoTitzFFWHdytoF7FM4hR0SzTorEFbO3uutOOgNZhyW_cKIfxE30AvqpohglgZYk1G-2fLo7iJz9cNNDwvOBwOJzPCr3oCXhg9TJWrEXrqJnV_RwAgsmCauJz0E_veVq3PaYBFghaMF-AtYmPcHng1xHddzyBw/s1600/cambodia-22-23-home-away-kits-5.jpg">
+                                BUY NOW <span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
 </div>
 </div>
 </section>
@@ -290,7 +326,7 @@
 <div class="col-span-2">
 <div class="text-xl font-black text-black font-headline mb-6">F-Sport</div>
 <p class="font-['Inter'] text-sm tracking-tight text-gray-600 mb-8 max-w-sm">
-                    The ultimate destination for professional football performance. Engineered for the pitch, curated for the archive. Join the elite.
+                    The ultimate destination for professional football performance. Engineered for the pitch, curated for the F-sport. Join the elite.
                 </p>
 <div class="flex gap-4">
 <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center cursor-pointer hover:bg-primary transition-all">
@@ -330,5 +366,152 @@
 <button class="md:hidden fixed bottom-8 right-8 w-16 h-16 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center z-50">
 <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
 </button>
+<div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Cart</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="item-count-label">0 Items</p>
+        </div>
+        <button id="close-cart" class="material-symbols-outlined hover:rotate-90 transition-transform duration-300 cursor-pointer">close</button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50 space-y-4">
+        <div class="flex justify-between items-center">
+            <span class="text-gray-500 uppercase text-xs font-bold">Subtotal</span>
+            <span id="cart-total" class="text-xl font-black">$0.00</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2">
+            <button id="clear-all-cart" class="py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear All</button>
+            <button class="py-3 text-[10px] font-bold uppercase bg-black text-white hover:bg-primary transition-colors">Checkout</button>
+        </div>
+    </div>
+</div>
 <script src="../src/auth.js"></script>
+<script>
+// We define these globally so the "onclick" in the HTML can find them
+let cart = JSON.parse(localStorage.getItem('fSportCart')) || [];
+
+// Function to delete a single item
+function deleteItem(index) {
+    cart.splice(index, 1);
+    // After removing, we need to refresh the UI
+    updateCart();
+}
+
+// We also need to make updateCart accessible
+function updateCart() {
+    const itemsContainer = document.getElementById('cart-items-container');
+    const totalDisplay = document.getElementById('cart-total');
+    const cartCountBadge = document.getElementById('cart-count');
+    const itemCountLabel = document.getElementById('item-count-label');
+
+    // Update the red badge on the bag icon
+    if (cartCountBadge) {
+        cartCountBadge.innerText = cart.length;
+        cart.length > 0 ? cartCountBadge.classList.remove('hidden') : cartCountBadge.classList.add('hidden');
+    }
+    
+    // Update the "X Items" label in the sidebar header
+    if (itemCountLabel) {
+        itemCountLabel.innerText = `${cart.length} Items`;
+    }
+
+    if (!itemsContainer) return;
+
+    itemsContainer.innerHTML = '';
+    let totalMoney = 0;
+
+    if (cart.length === 0) {
+        itemsContainer.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center opacity-30 mt-20">
+                <span class="material-symbols-outlined text-6xl">shopping_bag</span>
+                <p class="uppercase text-[10px] font-bold tracking-widest mt-2">Bag is empty</p>
+            </div>`;
+    } else {
+        cart.forEach((item, index) => {
+            totalMoney += parseFloat(item.price);
+            itemsContainer.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-100 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/80?text=No+Image'">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteItem(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 transition-colors cursor-pointer text-sm">
+                        delete
+                    </button>
+                </div>
+            `;
+        });
+    }
+
+    if (totalDisplay) {
+        totalDisplay.innerText = `$${totalMoney.toFixed(2)}`;
+    }
+    
+    // Save the changes to browser memory
+    localStorage.setItem('fSportCart', JSON.stringify(cart));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('cart-sidebar');
+    const overlay = document.getElementById('cart-overlay');
+    const cartIcon = document.getElementById('cart-icon');
+    const closeBtn = document.getElementById('close-cart');
+    const clearAllBtn = document.getElementById('clear-all-cart');
+    const buyButtons = document.querySelectorAll('.buy-now-btn');
+
+    // Buy Now logic
+    buyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image') 
+            };
+            cart.push(product);
+            updateCart();
+            
+            // Open sidebar automatically
+            sidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    // Clear All logic
+    if (clearAllBtn) {
+        clearAllBtn.addEventListener('click', () => {
+            cart = []; // Empty the array
+            updateCart(); // Refresh UI
+        });
+    }
+
+    // Toggle Sidebar
+    const toggleSidebar = () => {
+        sidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (cartIcon) cartIcon.addEventListener('click', toggleSidebar);
+    if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+    if (overlay) overlay.addEventListener('click', toggleSidebar);
+
+    // Run once on load to show existing items
+    updateCart();
+});
+</script>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+</style>
 </body></html>
