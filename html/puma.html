@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>F-Sport | Boots</title>
+<script src="../src/theme.js"></script>
+<link href="../style/site-theme.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#e5e2e1",
+                    "inverse-on-surface": "#f3f0ef",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#5a5c5d",
+                    "on-surface-variant": "#5e3f3c",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "outline-variant": "#e8bcb7",
+                    "primary-container": "#e71520",
+                    "secondary-fixed": "#e5e2e1",
+                    "tertiary-fixed": "#e2e2e3",
+                    "primary": "#bb0013",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#ebe7e7",
+                    "primary-fixed": "#ffdad6",
+                    "tertiary-container": "#737576",
+                    "surface-tint": "#c00014",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "surface-container": "#f0edec",
+                    "secondary": "#5f5e5e",
+                    "on-secondary-container": "#656464",
+                    "surface-variant": "#e5e2e1",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "surface-dim": "#dcd9d9",
+                    "on-tertiary-container": "#fcfcfd",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#ffb4ab",
+                    "background": "#fcf9f8",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "on-surface": "#1c1b1b",
+                    "on-secondary-fixed-variant": "#474646",
+                    "on-primary-container": "#fffbff",
+                    "surface-bright": "#fcf9f8",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "outline": "#936e6a",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary-fixed-variant": "#93000d",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#410002",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1c1b1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .kinetic-header {
+        letter-spacing: -0.05em;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen">
+<!-- TopNavBar -->
+<nav class="theme-nav fixed top-0 w-full z-50 backdrop-blur-xl flex justify-between items-center w-full px-8 h-20 border-b border-black/5">
+<a class="text-2xl font-black italic text-black dark:text-white font-headline tracking-tighter" href="./homepage.html">F-Sport</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-[#ED1C24] border-b-2 border-[#ED1C24] pb-1 hover:text-[#ED1C24] transition-colors duration-200" href="./boots.html">BOOTS</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="./cloth.html">CLOTH</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="./contact.html">CONTACT</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="./menu.html">MENU</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="./homepage.html">HOME</a>
+</div>
+<div class="flex items-center gap-3">
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" data-theme-toggle type="button">
+<span aria-hidden="true" class="material-symbols-outlined theme-toggle__icon" data-theme-icon></span>
+<span aria-hidden="true" class="theme-toggle__label" data-theme-label></span>
+</button>
+<button id="fav-icon" class="relative material-symbols-outlined text-on-surface hover:text-red-500 transition-colors cursor-pointer">
+    favorite
+    <span id="fav-count" class="absolute -top-1 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">0</span>
+  </button>
+<button id="cart-icon" class="relative material-symbols-outlined text-on-surface hover:text-primary transition-colors">
+  shopping_bag
+  <span id="cart-count" class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center hidden">
+    0
+  </span>
+</button>
+<a class="material-symbols-outlined text-on-surface hover:text-primary transition-colors" data-auth-icon="true" data-auth-link href="./login.html">person</a>
+</div>
+</nav>
+<main class="pt-20 min-h-screen flex flex-col md:flex-row">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-72 bg-surface-container-low p-8 sticky top-20 h-fit md:h-[calc(100vh-5rem)] overflow-y-auto no-scrollbar">
+<div class="mb-10">
+<h3 class="font-headline font-black text-xl mb-6 tracking-tight uppercase">Archive Filters</h3>
+<!-- Filter Group: Brand -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Brand</label>
+<div class="space-y-3">
+<label class="flex items-center cursor-pointer group">
+<a class="ml-3 font-label text-sm group-hover:text-primary transition-colors" href="./nike.html">NIKE</a>
+</label>
+<label class="flex items-center cursor-pointer group">
+<a class="ml-3 font-label text-sm group-hover:text-primary transition-colors" href="./adidas.html">ADIDAS</a>
+</label>
+<label class="flex items-center cursor-pointer group">
+<a class="ml-3 font-label text-sm group-hover:text-primary transition-colors" href="./puma.html">PUMA</a>
+</label>
+<label class="flex items-center cursor-pointer group">
+<a class="ml-3 font-label text-sm group-hover:text-primary transition-colors" href="./mizuno.html">MIZUNO</a>
+</label>
+</div>
+</div>
+<!-- Filter Group: Surface -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Surface Type</label>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary text-on-primary rounded-full text-xs font-medium cursor-pointer">Firm Ground (FG)</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer">Soft Ground (SG)</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer">Artificial Grass (AG)</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer">Turf (TF)</span>
+</div>
+</div>
+<!-- Filter Group: Size -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Size (UK)</label>
+<div class="grid grid-cols-4 gap-2">
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">7</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">7.5</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">8</div>
+<div class="h-10 flex items-center justify-center border border-primary text-primary font-bold bg-surface-container text-sm font-label cursor-pointer">8.5</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">9</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">9.5</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">10</div>
+<div class="h-10 flex items-center justify-center border border-outline-variant text-sm font-label hover:border-primary hover:text-primary cursor-pointer transition-colors">11</div>
+</div>
+</div>
+<button id="clear-filters-btn" class="w-full bg-on-surface text-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-primary transition-colors duration-300">
+  Clear All Filters
+</button>
+</aside>
+<!-- Product Content Area -->
+<section class="flex-1 bg-surface-container-low">
+<!-- Hero Header -->
+<header class="px-8 py-16 bg-surface border-b border-surface-container-high">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<span class="font-label text-xs font-bold text-primary tracking-[0.4em] uppercase mb-4 block">Performance</span>
+<h1 class="font-headline font-black text-6xl md:text-8xl kinetic-header uppercase leading-none text-on-surface">PUMA<br/>COLLECTION</h1>
+</div>
+<div class="max-w-md text-right">
+<p class="font-body text-secondary text-sm leading-relaxed mb-6">Explore the next evolution of pitch performance. Every boot in our archive is selected for precision, response, and raw acceleration.</p>
+<div class="flex items-center justify-end space-x-4">
+<span class="font-label text-xs text-on-surface-variant uppercase">Sorting by: <span class="font-bold text-on-surface">Relevance</span></span>
+<span class="material-symbols-outlined text-on-surface">tune</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Product Grid -->
+<div class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="absolute top-8 left-8">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">New Release</span>
+</div>
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Performance Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Modern professional football boot in vibrant crimson red with sleek aerodynamic silhouette and high-performance carbon fiber soleplate texture" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108414/01/fnd/PNA/fmt/png/PUMA-x-KIDSUPER-ULTRA-5-ULTIMATE-Men's-Firm-Ground-Soccer-Cleats"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">PUMA x KIDSUPER ULTRA 5 ULTIMATE</h3>
+<span class="font-headline font-bold text-xl">$250</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Pink Lilac-Fast Pink-Ravish</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="PUMA x KIDSUPER ULTRA 5 ULTIMATE" 
+  data-price="250"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108414/01/fnd/PNA/fmt/png/PUMA-x-KIDSUPER-ULTRA-5-ULTIMATE-Men's-Firm-Ground-Soccer-Cleats">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="PUMA x KIDSUPER ULTRA 5 ULTIMATE"
+  data-price="250"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108414/01/fnd/PNA/fmt/png/PUMA-x-KIDSUPER-ULTRA-5-ULTIMATE-Men's-Firm-Ground-Soccer-Cleats">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="White Soccer Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist white professional soccer boot with neon lime accents and futuristic textured upper on a clean grey background" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108779/01/fnd/PNA/fmt/png/ULTRA-6-ULTIMATE-Christian-Pulisic-Men's-Firm/Artificial-Ground-Soccer-Cleats"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ULTRA 6 ULTIMATE Christian Pulisic</h3>
+<span class="font-headline font-bold text-xl">$240</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA Black-Fast Red-Fire Orchid</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ULTRA 6 ULTIMATE Christian Pulisic"
+  data-price="240"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108779/01/fnd/PNA/fmt/png/ULTRA-6-ULTIMATE-Christian-Pulisic-Men's-Firm/Artificial-Ground-Soccer-Cleats">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ULTRA 6 ULTIMATE Christian Pulisic"
+  data-price="240"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108779/01/fnd/PNA/fmt/png/ULTRA-6-ULTIMATE-Christian-Pulisic-Men's-Firm/Artificial-Ground-Soccer-Cleats">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Stealth Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Stealth black matte football boot with subtle gloss details and aggressive stud configuration for maximum traction" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108457/01/fnd/PNA/fmt/png/KING-20-ULTIMATE-Men's-Firm/Artificial-Ground-Soccer-Cleats"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">KING 20 ULTIMATE</h3>
+<span class="font-headline font-bold text-xl">$220</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA White-Glowing Red-Yellow Alert</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="KING 20 ULTIMATE"
+  data-price="220"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108457/01/fnd/PNA/fmt/png/KING-20-ULTIMATE-Men's-Firm/Artificial-Ground-Soccer-Cleats">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="KING 20 ULTIMATE"
+  data-price="220"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108457/01/fnd/PNA/fmt/png/KING-20-ULTIMATE-Men's-Firm/Artificial-Ground-Soccer-Cleats">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108753/01/fnd/PNA/fmt/png/ULTRA-6-ULTIMATE-DARE-TO-Firm-Ground-Soccer-Cleats"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ULTRA 6 ULTIMATE DARE TO</h3>
+<span class="font-headline font-bold text-xl">$240</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Persian Blue-Puma Aged Silver-PUMA Black-Lime Squeeze
+
+</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ULTRA 6 ULTIMATE DARE TO" 
+  data-price="240"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108779/01/fnd/PNA/fmt/png/ULTRA-6-ULTIMATE-Christian-Pulisic-Men's-Firm/Artificial-Ground-Soccer-Cleats">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ULTRA 6 ULTIMATE DARE TO"
+  data-price="240"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108779/01/fnd/PNA/fmt/png/ULTRA-6-ULTIMATE-Christian-Pulisic-Men's-Firm/Artificial-Ground-Soccer-Cleats">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Grey Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Wolf grey performance boot with multi-layered technical mesh and striking red laces for an aggressive athletic look" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/107961/01/fnd/PNA/fmt/png/PUMA-x-CHRISTIAN-PULISIC-ULTRA-ULTIMATE-Firm-Ground/Artificial-Ground-Men's-Soccer-Cleats"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">PUMA x CHRISTIAN PULISIC ULTRA ULTIMATE</h3>
+<span class="font-headline font-bold text-xl">$220</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Sun Stream-PUMA Navy-Sunset Glow</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="PUMA x CHRISTIAN PULISIC ULTRA ULTIMATE" 
+  data-price="220"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/107961/01/fnd/PNA/fmt/png/PUMA-x-CHRISTIAN-PULISIC-ULTRA-ULTIMATE-Firm-Ground/Artificial-Ground-Men's-Soccer-Cleats">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="PUMA x CHRISTIAN PULISIC ULTRA ULTIMATE"
+  data-price="220"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/107961/01/fnd/PNA/fmt/png/PUMA-x-CHRISTIAN-PULISIC-ULTRA-ULTIMATE-Firm-Ground/Artificial-Ground-Men's-Soccer-Cleats">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Grey Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Wolf grey performance boot with multi-layered technical mesh and striking red laces for an aggressive athletic look" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108959/01/fnd/PNA/fmt/png/KING-20-ULTIMATE-CA-NYC-Men's-Soccer-Cleats"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">KING 20 ULTIMATE CA NYC</h3>
+<span class="font-headline font-bold text-xl">$280</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Icy Blue-Mint Jelly-Sparkling Green</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="KING 20 ULTIMATE CA NYC" 
+  data-price="280"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108959/01/fnd/PNA/fmt/png/KING-20-ULTIMATE-CA-NYC-Men's-Soccer-Cleats">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="KING 20 ULTIMATE CA NYC"
+  data-price="280"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108959/01/fnd/PNA/fmt/png/KING-20-ULTIMATE-CA-NYC-Men's-Soccer-Cleats">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Performance Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Modern professional football boot in vibrant crimson red with sleek aerodynamic silhouette and high-performance carbon fiber soleplate texture" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108719/03/fnd/GBR/fmt/png/FUTURE-9-PLAY-FG/AG-Football-Boots-Women"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">FUTURE 9 PLAY FG/AG Football Boots Women</h3>
+<span class="font-headline font-bold text-xl">$60</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Icy Blue-Blue Jewel</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="FUTURE 9 PLAY FG/AG Football Boots Women" 
+  data-price="60"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108719/03/fnd/GBR/fmt/png/FUTURE-9-PLAY-FG/AG-Football-Boots-Women">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="FUTURE 9 PLAY FG/AG Football Boots Women"
+  data-price="60"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108719/03/fnd/GBR/fmt/png/FUTURE-9-PLAY-FG/AG-Football-Boots-Women">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 8 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1" >
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="White Soccer Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist white professional soccer boot with neon lime accents and futuristic textured upper on a clean grey background" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108890/04/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-AG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">FUTURE 9 ULTIMATE AG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$300</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA White-Metallic Gold-PUMA Black</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="FUTURE 9 ULTIMATE AG Football Boots Unisex" 
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108890/04/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-AG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="FUTURE 9 ULTIMATE AG Football Boots Unisex"
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108890/04/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-AG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 9 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Stealth Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Stealth black matte football boot with subtle gloss details and aggressive stud configuration for maximum traction" src="https://www.futbolemotion.com/imagesarticulos/254656/grandes/bota-puma-king-ultimate-fgag-silver-black-sun-struck-white-0.webp"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">PUMA KING ULTIMATE</h3>
+<span class="font-headline font-bold text-xl">$185/€219</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA Silver-PUMA Black-Sun Struck-PUMA White</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="PUMA KING ULTIMATE" 
+  data-price="185"
+  data-image="https://www.futbolemotion.com/imagesarticulos/254656/grandes/bota-puma-king-ultimate-fgag-silver-black-sun-struck-white-0.webp">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="PUMA KING ULTIMATE"
+  data-price="185"
+  data-image="https://www.futbolemotion.com/imagesarticulos/254656/grandes/bota-puma-king-ultimate-fgag-silver-black-sun-struck-white-0.webp">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 10 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://www.soccerbible.com/media/178085/creativity2-1.jpg"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">PUMA FUTURE 9 ULTIMATE CREATIVITY</h3>
+<span class="font-headline font-bold text-xl">$215/€250</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA Silver-PUMA Black-Sun Struck-PUMA White</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="PUMA FUTURE 9 ULTIMATE CREATIVITY" 
+  data-price="215"
+  data-image="https://www.soccerbible.com/media/178085/creativity2-1.jpg">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="PUMA FUTURE 9 ULTIMATE CREATIVITY"
+  data-price="215"
+  data-image="https://www.soccerbible.com/media/178085/creativity2-1.jpg">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 11 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108890/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-AG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">FUTURE 9 ULTIMATE AG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$300</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Glowing Red-PUMA White-PUMA Black-PUMA Silver</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="FUTURE 9 ULTIMATE AG Football Boots Unisex" 
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108890/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-AG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="FUTURE 9 ULTIMATE AG Football Boots Unisex"
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108890/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-AG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 12 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Grey Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Wolf grey performance boot with multi-layered technical mesh and striking red laces for an aggressive athletic look" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108996/02/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-AG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ULTRA 6 ULTIMATE AG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$285</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA Black-PUMA Red</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ULTRA 6 ULTIMATE AG Football Boots Unisex" 
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108996/02/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-AG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ULTRA 6 ULTIMATE AG Football Boots Unisex"
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108996/02/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-AG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 13 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Performance Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Modern professional football boot in vibrant crimson red with sleek aerodynamic silhouette and high-performance carbon fiber soleplate texture" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108996/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-AG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ADIDAS PREDATORULTRA 6 ULTIMATE AG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$285</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Yellow Alert-PUMA Black-Glowing Red-Lime Squeeze</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ADIDAS PREDATORULTRA 6 ULTIMATE AG Football Boots Unisex" 
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108996/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-AG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ADIDAS PREDATORULTRA 6 ULTIMATE AG Football Boots Unisex"
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108996/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-AG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 14 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1" >
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="White Soccer Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist white professional soccer boot with neon lime accents and futuristic textured upper on a clean grey background" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108557/03/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ULTRA 6 ULTIMATE FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$285</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Heat Fire-PUMA Black-Glowing Red</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ULTRA 6 ULTIMATE FG Football Boots Unisex" 
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108557/03/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-FG-Football-Boots-Unisex">
+  Pre-Order
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ULTRA 6 ULTIMATE FG Football Boots Unisex"
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108557/03/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 15 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Stealth Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Stealth black matte football boot with subtle gloss details and aggressive stud configuration for maximum traction" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108557/02/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ULTRA 6 ULTIMATE FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$285</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA Black-Fizzy Light-Green Terrain</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ULTRA 6 ULTIMATE FG Football Boots Unisex" 
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108557/02/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-FG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ULTRA 6 ULTIMATE FG Football Boots Unisex"
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108557/02/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 16 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108752/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-RELENTLESS-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ULTRA 6 ULTIMATE RELENTLESS FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$285</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA Black-Glowing Red</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ULTRA 6 ULTIMATE RELENTLESS FG Football Boots Unisex" 
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108752/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-RELENTLESS-FG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ULTRA 6 ULTIMATE RELENTLESS FG Football Boots Unisex"
+  data-price="285"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108752/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-RELENTLESS-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 17 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109261/01/fnd/GBR/fmt/png/KING-PLATINUM-FG/AG-PANTERA-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">KING PLATINUM FG/AG PANTERA Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$300</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA Black-PUMA Black-PUMA Black</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="KING PLATINUM FG/AG PANTERA Football Boots Unisex" 
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109261/01/fnd/GBR/fmt/png/KING-PLATINUM-FG/AG-PANTERA-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="KING PLATINUM FG/AG PANTERA Football Boots Unisex"
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109261/01/fnd/GBR/fmt/png/KING-PLATINUM-FG/AG-PANTERA-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 18 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Grey Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Wolf grey performance boot with multi-layered technical mesh and striking red laces for an aggressive athletic look" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109026/05/fnd/GBR/fmt/png/KING-PLATINUM-FG/AG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">KING PLATINUM FG/AG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$250</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">PUMA White-Metallic Gold-PUMA Black</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="KING PLATINUM FG/AG Football Boots Unisex" 
+  data-price="250"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109026/05/fnd/GBR/fmt/png/KING-PLATINUM-FG/AG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="KING PLATINUM FG/AG Football Boots Unisex"
+  data-price="250"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109026/05/fnd/GBR/fmt/png/KING-PLATINUM-FG/AG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 19 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="absolute top-8 left-8">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 tracking-widest uppercase">New Release</span>
+</div>
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Performance Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Modern professional football boot in vibrant crimson red with sleek aerodynamic silhouette and high-performance carbon fiber soleplate texture" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108457/03/fnd/GBR/fmt/png/KING-20-ULTIMATE-FG/AG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">KING 20 ULTIMATE FG/AG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$272</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Silver Mist-Blue Jewel-Vibrant Blue</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="KING 20 ULTIMATE FG/AG Football Boots Unisex" 
+  data-price="272"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108457/03/fnd/GBR/fmt/png/KING-20-ULTIMATE-FG/AG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="KING 20 ULTIMATE FG/AG Football Boots Unisex"
+  data-price="272"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108457/03/fnd/GBR/fmt/png/KING-20-ULTIMATE-FG/AG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 20 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1" >
+<div class="absolute top-8 left-8">
+<span class="bg-on-surface text-surface text-[10px] font-bold px-3 py-1 tracking-widest uppercase">Pre-Order</span>
+</div>
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="White Soccer Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist white professional soccer boot with neon lime accents and futuristic textured upper on a clean grey background" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108962/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-CA-MIA-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">ULTRA 6 ULTIMATE CA MIA FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$313</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Rose Dust-Electric Peppermint-PUMA Gold-Blue Crystal</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="ULTRA 6 ULTIMATE CA MIA FG Football Boots Unisex" 
+  data-price="313"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108962/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-CA-MIA-FG-Football-Boots-Unisex">
+  Pre-Order
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="ULTRA 6 ULTIMATE CA MIA FG Football Boots Unisex"
+  data-price="313"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108962/01/fnd/GBR/fmt/png/ULTRA-6-ULTIMATE-CA-MIA-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 21 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Stealth Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Stealth black matte football boot with subtle gloss details and aggressive stud configuration for maximum traction" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108955/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CA-LA-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">FUTURE 9 ULTIMATE CA LA FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$327</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Light Aqua-Aqua-Team Aqua-Sun Stream</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="FUTURE 9 ULTIMATE CA LA FG Football Boots Unisex"
+  data-price="327"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108955/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CA-LA-FG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="FUTURE 9 ULTIMATE CA LA FG Football Boots Unisex"
+  data-price="327"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108955/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CA-LA-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 22 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109061/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CA-DAL-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">FUTURE 9 ULTIMATE CA DAL FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$327</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Aubergine-Dark Chocolate-Archive Gold-PUMA White-PUMA Silver</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="FUTURE 9 ULTIMATE CA DAL FG Football Boots Unisex"
+  data-price="327"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109061/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CA-DAL-FG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="FUTURE 9 ULTIMATE CA DAL FG Football Boots Unisex"
+  data-price="327"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/109061/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CA-DAL-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 23 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Electric Blue Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Electric blue soccer shoe with sharp geometric patterns and lightweight synthetic upper designed for speed" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108943/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">FUTURE 9 ULTIMATE FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$327</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Creamy Vanilla-PUMA Gold-Mint Jelly-Emerald Ice</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="FUTURE 9 ULTIMATE FG Football Boots Unisex"
+  data-price="327"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108943/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-FG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="FUTURE 9 ULTIMATE FG Football Boots Unisex"
+  data-price="327"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108943/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 24 -->
+<div class="group bg-surface-container-lowest p-8 flex flex-col relative transition-all duration-300 hover:z-10 hover:-translate-y-1">
+<div class="h-64 flex items-center justify-center mb-10 overflow-hidden">
+<img alt="Grey Boot" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110" data-alt="Wolf grey performance boot with multi-layered technical mesh and striking red laces for an aggressive athletic look" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108947/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CREATIVITY-FG-Football-Boots-Unisex"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-black text-2xl tracking-tight uppercase leading-tight">CFUTURE 9 ULTIMATE CREATIVITY FG Football Boots Unisex</h3>
+<span class="font-headline font-bold text-xl">$300</span>
+</div>
+<p class="font-label text-xs text-secondary uppercase tracking-widest mb-8">Yellow Alert-Mint Jelly-PUMA White-PUMA Black</p>
+<div class="mt-auto flex gap-2">
+<button 
+  class="buy-now-btn flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-bold py-4 uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity"
+  data-name="FUTURE 9 ULTIMATE CREATIVITY FG Football Boots Unisex"
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108947/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CREATIVITY-FG-Football-Boots-Unisex">
+  Buy Now
+</button>
+<button 
+  class="fav-btn p-3 border border-outline-variant rounded-sm hover:bg-red-50 transition-colors"
+  data-name="FUTURE 9 ULTIMATE CREATIVITY FG Football Boots Unisex"
+  data-price="300"
+  data-image="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_900,h_900/global/108947/01/fnd/GBR/fmt/png/FUTURE-9-ULTIMATE-CREATIVITY-FG-Football-Boots-Unisex">
+  <span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination/Load More -->
+<div class="p-16 flex flex-col items-center">
+<div class="w-full h-px bg-surface-container-high mb-12"></div>
+<p class="font-label text-xs text-secondary mt-6 uppercase tracking-widest">Showing INSTOCKperformance artifacts</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="theme-footer bg-[#e5e2e1] dark:bg-[#1a1a1a] w-full mt-auto">
+<div class="max-w-7xl mx-auto px-12 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-black text-black dark:text-white font-headline mb-6 tracking-tighter">F-Sport</div>
+<p class="font-['Inter'] text-sm tracking-tight text-gray-600 dark:text-gray-400 mb-6 max-w-xs leading-relaxed">Defining the speed of sport through precise engineering and archival curation. Made for the athletes who command the future.</p>
+<div class="flex space-x-4">
+<div class="w-8 h-8 flex items-center justify-center border border-gray-400 rounded-full hover:border-primary hover:text-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm">public</span></div>
+<div class="w-8 h-8 flex items-center justify-center border border-gray-400 rounded-full hover:border-primary hover:text-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm">alternate_email</span></div>
+</div>
+</div>
+<div>
+<h4 class="font-['Inter'] text-sm tracking-tight text-black dark:text-white font-bold mb-6 uppercase">Customer Service</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./contact.html">Shipping &amp; Returns</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./boots.html">Size Guide</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./menu.html">Order Tracking</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Inter'] text-sm tracking-tight text-black dark:text-white font-bold mb-6 uppercase">Exploration</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./homepage.html">Stadium Finder</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./boots.html">Archive Labs</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./cloth.html">Athletes</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Inter'] text-sm tracking-tight text-black dark:text-white font-bold mb-6 uppercase">Contact &amp; Privacy</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./contact.html">Contact</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./contact.html">Privacy Policy</a></li>
+<li><a class="text-gray-600 dark:text-gray-400 hover:text-[#ED1C24] transition-all text-sm uppercase font-label tracking-wider" href="./contact.html">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-300 dark:border-gray-800 py-8 px-12 text-center">
+<p class="font-['Inter'] text-sm tracking-tight text-gray-500 uppercase font-bold">© 2024 F-Sport. ENGINEERED FOR THE PITCH.</p>
+</div>
+</footer>
+//checkout cart action sidebar
+<div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Cart</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="item-count-label">0 Items</p>
+        </div>
+        <button id="close-cart" class="material-symbols-outlined hover:rotate-90 transition-transform duration-300 cursor-pointer">close</button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50 space-y-4">
+        <div class="flex justify-between items-center">
+            <span class="text-gray-500 uppercase text-xs font-bold">Subtotal</span>
+            <span id="cart-total" class="text-xl font-black">$0.00</span>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-2">
+            <button id="clear-all-cart" class="py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear All</button>
+            <button class="py-3 text-[10px] font-bold uppercase bg-black text-white hover:bg-primary transition-colors">Checkout</button>
+        </div>
+    </div>
+</div>
+<script src="../src/auth.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const surfaceButtons = document.querySelectorAll('.flex.flex-wrap.gap-2 span');
+  const sizeButtons = document.querySelectorAll('.grid.grid-cols-4.gap-2 > div');
+  
+  // CHANGED: Target by ID instead of the color class
+  const clearButton = document.getElementById('clear-filters-btn');
+
+  // --- SURFACE LOGIC ---
+  surfaceButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      surfaceButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      });
+      button.classList.replace('bg-secondary-container', 'bg-primary');
+      button.classList.replace('text-on-secondary-container', 'text-on-primary');
+    });
+  });
+
+  // --- SIZE LOGIC ---
+  sizeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      sizeButtons.forEach(btn => {
+        btn.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+        btn.classList.add('border-outline-variant');
+      });
+      button.classList.remove('border-outline-variant');
+      button.classList.add('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+    });
+  });
+
+  // --- CLEAR FILTERS ACTION ---
+  if (clearButton) {
+    clearButton.addEventListener('click', () => {
+      // Reset Surfaces
+      surfaceButtons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      });
+
+      // Reset Sizes
+      sizeButtons.forEach(btn => {
+        btn.classList.remove('border-primary', 'text-primary', 'font-bold', 'bg-surface-container');
+        btn.classList.add('border-outline-variant');
+      });
+    });
+  }
+});
+</script>
+<script>
+// We define these globally so the "onclick" in the HTML can find them
+let cart = JSON.parse(localStorage.getItem('fSportCart')) || [];
+
+// Function to delete a single item
+function deleteItem(index) {
+    cart.splice(index, 1);
+    // After removing, we need to refresh the UI
+    updateCart();
+}
+
+// We also need to make updateCart accessible
+function updateCart() {
+    const itemsContainer = document.getElementById('cart-items-container');
+    const totalDisplay = document.getElementById('cart-total');
+    const cartCountBadge = document.getElementById('cart-count');
+    const itemCountLabel = document.getElementById('item-count-label');
+
+    // Update the red badge on the bag icon
+    if (cartCountBadge) {
+        cartCountBadge.innerText = cart.length;
+        cart.length > 0 ? cartCountBadge.classList.remove('hidden') : cartCountBadge.classList.add('hidden');
+    }
+    
+    // Update the "X Items" label in the sidebar header
+    if (itemCountLabel) {
+        itemCountLabel.innerText = `${cart.length} Items`;
+    }
+
+    if (!itemsContainer) return;
+
+    itemsContainer.innerHTML = '';
+    let totalMoney = 0;
+
+    if (cart.length === 0) {
+        itemsContainer.innerHTML = `
+            <div class="h-full flex flex-col items-center justify-center opacity-30 mt-20">
+                <span class="material-symbols-outlined text-6xl">shopping_bag</span>
+                <p class="uppercase text-[10px] font-bold tracking-widest mt-2">Bag is empty</p>
+            </div>`;
+    } else {
+        cart.forEach((item, index) => {
+            totalMoney += parseFloat(item.price);
+            itemsContainer.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-100 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/80?text=No+Image'">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteItem(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 transition-colors cursor-pointer text-sm">
+                        delete
+                    </button>
+                </div>
+            `;
+        });
+    }
+
+    if (totalDisplay) {
+        totalDisplay.innerText = `$${totalMoney.toFixed(2)}`;
+    }
+    
+    // Save the changes to browser memory
+    localStorage.setItem('fSportCart', JSON.stringify(cart));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('cart-sidebar');
+    const overlay = document.getElementById('cart-overlay');
+    const cartIcon = document.getElementById('cart-icon');
+    const closeBtn = document.getElementById('close-cart');
+    const clearAllBtn = document.getElementById('clear-all-cart');
+    const buyButtons = document.querySelectorAll('.buy-now-btn');
+
+    // Buy Now logic
+    buyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image') 
+            };
+            cart.push(product);
+            updateCart();
+            
+            // Open sidebar automatically
+            sidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    // Clear All logic
+    if (clearAllBtn) {
+        clearAllBtn.addEventListener('click', () => {
+            cart = []; // Empty the array
+            updateCart(); // Refresh UI
+        });
+    }
+
+    // Toggle Sidebar
+    const toggleSidebar = () => {
+        sidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (cartIcon) cartIcon.addEventListener('click', toggleSidebar);
+    if (closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+    if (overlay) overlay.addEventListener('click', toggleSidebar);
+
+    // Run once on load to show existing items
+    updateCart();
+});
+</script>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+</style>
+<script>
+// Global state for Favorites
+let favorites = JSON.parse(localStorage.getItem('fSportFavs')) || [];
+
+function deleteFav(index) {
+    favorites.splice(index, 1);
+    updateFavUI();
+}
+
+function updateFavUI() {
+    const container = document.getElementById('fav-items-container');
+    const countBadge = document.getElementById('fav-count');
+    const label = document.getElementById('fav-count-label');
+
+    if (countBadge) {
+        countBadge.innerText = favorites.length;
+        favorites.length > 0 ? countBadge.classList.remove('hidden') : countBadge.classList.add('hidden');
+    }
+    if (label) label.innerText = `${favorites.length} Items`;
+
+    if (!container) return;
+    container.innerHTML = '';
+
+    if (favorites.length === 0) {
+        container.innerHTML = `<div class="h-full flex flex-col items-center justify-center opacity-30 mt-20"><span class="material-symbols-outlined text-6xl">favorite</span><p class="uppercase text-[10px] font-bold mt-2">No favorites yet</p></div>`;
+    } else {
+        favorites.forEach((item, index) => {
+            container.innerHTML += `
+                <div class="flex gap-4 items-center animate-fadeIn border-b border-gray-50 pb-4">
+                    <div class="h-20 w-20 bg-gray-100 flex-shrink-0 rounded overflow-hidden">
+                         <img src="${item.image}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-[10px] font-black uppercase italic leading-tight">${item.name}</h4>
+                        <p class="text-[10px] text-red-600 font-bold mt-1">$${item.price}</p>
+                    </div>
+                    <button onclick="deleteFav(${index})" class="material-symbols-outlined text-gray-300 hover:text-red-500 cursor-pointer text-sm">delete</button>
+                </div>`;
+        });
+    }
+    localStorage.setItem('fSportFavs', JSON.stringify(favorites));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const favIcon = document.getElementById('fav-icon');
+    const favSidebar = document.getElementById('fav-sidebar');
+    const closeFav = document.getElementById('close-fav');
+    const overlay = document.getElementById('cart-overlay'); // Reuse the same overlay
+    const favButtons = document.querySelectorAll('.fav-btn');
+    const clearFavBtn = document.getElementById('clear-all-fav');
+
+    favButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const product = {
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                image: btn.getAttribute('data-image')
+            };
+            
+            // Check if already in favorites to avoid duplicates
+            if (!favorites.some(item => item.name === product.name)) {
+                favorites.push(product);
+                updateFavUI();
+                
+                // Toggle heart color visually
+                btn.querySelector('span').classList.add('text-red-500');
+            }
+            
+            // Open Sidebar
+            favSidebar.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+        });
+    });
+
+    const toggleFav = () => {
+        favSidebar.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    };
+
+    if (favIcon) favIcon.addEventListener('click', toggleFav);
+    if (closeFav) closeFav.addEventListener('click', toggleFav);
+    if (clearFavBtn) {
+        clearFavBtn.addEventListener('click', () => {
+            favorites = [];
+            updateFavUI();
+        });
+    }
+
+    updateFavUI();
+});
+</script>
+</body></html>

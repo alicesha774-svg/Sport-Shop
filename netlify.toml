@@ -1,0 +1,9 @@
+[build]
+  command = "echo Static HTML site - no build step"
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/html/homepage.html"
+  status = 302
+  force = true

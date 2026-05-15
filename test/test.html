@@ -1,0 +1,101 @@
+
+      .product-card.is-hidden {
+        display: none;
+      }
+      .cart-action-button.is-added {
+        background: #1c1b1b;
+        color: #fcf9f8;
+      }
+      .cart-count-badge {
+        min-width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 9999px;
+        background: #bb0013;
+        color: #ffffff;
+        font-size: 0.625rem;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .surface-guide-card {
+        border: 1px solid #e8bcb7;
+        background: #f6f3f2;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">GLOVES</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">APPAREL</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">EQUIPMENT</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">LATEST</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">SALE</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">shopping_bag</button>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">person</button>
+</div>
+</nav>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">LATEST</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-black dark:text-white hover:text-[#ED1C24] transition-colors duration-200" href="#">SALE</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="relative material-symbols-outlined text-on-surface hover:text-primary transition-colors" type="button">
+shopping_bag
+<span class="cart-count-badge absolute -right-2 -top-2 hidden" id="cart-count">0</span>
+</button>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors">person</button>
+</div>
+</nav>
+<main class="pt-20 min-h-screen flex flex-col md:flex-row">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-72 bg-surface-container-low p-8 sticky top-20 h-fit md:h-[calc(100vh-5rem)] overflow-y-auto no-scrollbar">
+<div class="mb-10">
+<h3 class="font-headline font-black text-xl mb-6 tracking-tight uppercase">Archive Filters</h3>
+<!-- Filter Group: Brand -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Brand</label>
+<div class="space-y-3">
+<label class="flex items-center cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">NIKE ARCHIVE</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input checked="" class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">ADIDAS PERFORMANCE</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">PUMA KINETIC</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Surface -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Brand</label>
+<div class="space-y-3">
+<label class="flex items-center cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" data-brand-filter="NIKE ARCHIVE" data-brand-label="Nike Archive" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">NIKE ARCHIVE</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input checked="" class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" data-brand-filter="ADIDAS PERFORMANCE" data-brand-label="Adidas Performance" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">ADIDAS PERFORMANCE</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-none focus:ring-primary w-4 h-4" data-brand-filter="PUMA KINETIC" data-brand-label="Puma Kinetic" type="checkbox"/>
+<span class="ml-3 font-label text-sm group-hover:text-primary transition-colors">PUMA KINETIC</span>
+</label>
+</div>
+<p class="mt-4 font-body text-xs leading-relaxed text-on-surface-variant">Confirmed brands: <span class="font-semibold text-on-surface" id="confirmed-brand-summary">Adidas Performance</span></p>
+</div>
+<!-- Filter Group: Surface -->
+<div class="mb-8">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-secondary mb-4 block">Surface Type</label>
+<div class="flex flex-wrap gap-2">
+<button class="surface-filter-button is-active px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer" data-surface-filter="ALL" type="button">All Surfaces</button>
+<button class="surface-filter-button px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer" data-surface-filter="AG" type="button">Artificial Grass (AG)</button>
+<button class="surface-filter-button px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-medium hover:bg-surface-dim transition-colors cursor-pointer" data-surface-filter="TF" type="button">Turf (TF)</button>
+</div>
+<div class="surface-guide-card rounded-xl px-4 py-4 mt-4">
+<p class="font-label text-[11px] font-bold uppercase tracking-[0.3em] text-primary mb-3">Surface Guide</p>
