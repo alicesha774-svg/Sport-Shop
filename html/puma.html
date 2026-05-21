@@ -91,6 +91,42 @@
         display: none;
       }
     </style>
+    <!-- HTML Meta Tags -->
+<title>F-Sport | Home</title>
+<meta name="description" content="">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://f-sportshop.netlify.app/html/homepage.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="F-Sport | Home">
+<meta property="og:description" content="">
+<meta property="og:image" content="thumbnail.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="f-sportshop.netlify.app">
+<meta property="twitter:url" content="https://f-sportshop.netlify.app/html/homepage.html">
+<meta name="twitter:title" content="F-Sport | Home">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="thumbnail.jpg">
+
+<!-- Instagram Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="instagram :domain" content="f-sportshop.netlify.app">
+<meta property="instagram:url" content="https://f-sportshop.netlify.app/html/homepage.html">
+<meta name="instagram:title" content="F-Sport | Home">
+<meta name="instagram:description" content="">
+<meta name="instagram:image" content="thumbnail.jpg">
+
+<!-- Telegram Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="Telegram:domain" content="f-sportshop.netlify.app">
+<meta property="Telegram:url" content="https://f-sportshop.netlify.app/html/homepage.html">
+<meta name="Telegram:title" content="F-Sport | Home">
+<meta name="Telegram:description" content="">
+<meta name="Telegram:image" content="html/thumbnail.jpg">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 </head>
 <body class="bg-surface font-body text-on-surface min-h-screen">
 <!-- TopNavBar -->
@@ -947,7 +983,24 @@
 <p class="font-['Inter'] text-sm tracking-tight text-gray-500 uppercase font-bold">© 2024 F-Sport. ENGINEERED FOR THE PITCH.</p>
 </div>
 </footer>
-//checkout cart action sidebar
+// favorite cart action sidebar
+<div id="fav-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
+    <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+        <div>
+            <h2 class="font-black uppercase italic text-xl tracking-tighter">Your Favorites</h2>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest" id="fav-count-label">0 Items</p>
+        </div>
+        <button id="close-fav" class="material-symbols-outlined cursor-pointer">close</button>
+    </div>
+
+    <div id="fav-items-container" class="flex-1 overflow-y-auto p-6 space-y-6">
+        </div>
+
+    <div class="p-6 border-t bg-gray-50">
+        <button id="clear-all-fav" class="w-full py-3 text-[10px] font-bold uppercase border border-gray-200 hover:bg-red-50 hover:text-red-600 transition-colors">Clear Favorites</button>
+    </div>
+</div>
+// checkout cart action sidebar
 <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out z-[100] flex flex-col">
     <div class="p-6 border-b flex justify-between items-center bg-gray-50">
         <div>
@@ -972,6 +1025,8 @@
         </div>
     </div>
 </div>
+
+<div id="cart-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-[90] transition-opacity duration-300"></div>
 <script src="../src/auth.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
